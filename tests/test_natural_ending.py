@@ -43,7 +43,7 @@ async def test_end_waits_for_spoken_recap_and_clinic_reply_before_hangup(monkeyp
     assert session.say.call_args.args[0] == (
         "I understand the next step. Thank you for your help. Goodbye."
     )
-    assert session.say.call_args.kwargs["allow_interruptions"] is False
+    assert session.say.call_args.kwargs["allow_interruptions"] is True
     listening = asyncio.create_task(patient.wait_for_clinic_reply())
     await asyncio.sleep(0)
     assert not patient.done.is_set()
@@ -86,15 +86,16 @@ async def test_clinic_speech_is_not_cut_off_at_the_quiet_grace_deadline(monkeypa
     assert patient.finish_completed
 
 
-async def test_interrupted_goodbye_never_claims_a_complete_ending():
+async def test_interrupted_goodbye_resumes_listening_without_claiming_a_complete_ending():
     patient, session = patient_with_session()
     session.say.return_value = SimpleNamespace(wait_for_playout=AsyncMock(), interrupted=True)
-    with pytest.raises(RuntimeError, match="interrupted"):
-        await patient.finish_call(
-            SimpleNamespace(wait_for_playout=AsyncMock()),
-            "resolved",
-            "The office confirmed my appointment.",
-        )
+    await patient.finish_call(
+        SimpleNamespace(wait_for_playout=AsyncMock()),
+        "resolved",
+        "The office confirmed my appointment.",
+    )
+    assert not patient.closing
+    assert patient.outcome is None and patient.recap is None
     assert not patient.farewell_played and not patient.finish_completed
     assert not patient.done.is_set()
 
@@ -139,3 +140,49 @@ async def test_turn_commit_before_listening_state_does_not_stall_closing(monkeyp
     patient.note_clinic_state("listening")
     await asyncio.wait_for(listening, timeout=0.1)
     assert patient.finish_completed
+
+
+async def test_closing_waits_through_clinic_speech_and_a_resumed_sentence(monkeypatch):
+    monkeypatch.setattr(caller, "CLINIC_QUIET_SECONDS", 0.03)
+    patient, session = patient_with_session()
+    session.say.return_value = SimpleNamespace(wait_for_playout=AsyncMock(), interrupted=False)
+    patient.note_clinic_state("speaking")
+    task = asyncio.create_task(
+        patient.finish_call(
+            SimpleNamespace(wait_for_playout=AsyncMock()),
+            "blocked",
+            "I'll contact support.",
+        )
+    )
+    await asyncio.sleep(0.01)
+    session.say.assert_not_called()
+    patient.note_clinic_state("listening")
+    await asyncio.sleep(0.005)
+    # The clinic resumes before the quiet window expires.
+    patient.note_clinic_state("speaking")
+    await asyncio.sleep(0.04)
+    session.say.assert_not_called()
+    patient.note_clinic_state("listening")
+    patient.note_clinic_turn()
+    await asyncio.wait_for(task, timeout=0.2)
+    session.say.assert_called_once()
+    assert patient.farewell_played
+
+
+async def test_cancelled_quiet_wait_releases_closing_state_for_new_clinic_turn():
+    patient, session = patient_with_session()
+    patient.note_clinic_state("speaking")
+    task = asyncio.create_task(
+        patient.finish_call(
+            SimpleNamespace(wait_for_playout=AsyncMock()),
+            "blocked",
+            "I'll contact support.",
+        )
+    )
+    await asyncio.sleep(0)
+    task.cancel()
+    with pytest.raises(asyncio.CancelledError):
+        await task
+    assert not patient.closing and not patient.farewell_played
+    assert patient.outcome is None
+    session.say.assert_not_called()

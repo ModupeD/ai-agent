@@ -118,6 +118,9 @@ def audit(root: Path) -> dict:
                 problems.append("wrong destination")
             if manifest.get("status") != "complete":
                 problems.append(f"call status: {manifest.get('status')}")
+            review = manifest.get("quality_review", {})
+            if review.get("status") == "rejected":
+                problems.append("Audio rejected by listening review: " + review.get("reason", ""))
             turns = json.loads((path.parent / "transcript.json").read_text())
             for speaker in ("patient", "clinic"):
                 if sum(t["speaker"] == speaker for t in turns) < 3:

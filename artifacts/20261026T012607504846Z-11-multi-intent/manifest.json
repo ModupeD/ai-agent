@@ -1,0 +1,51 @@
+{
+  "id": "20261026T012607504846Z-11-multi-intent",
+  "scenario": {
+    "id": "11-multi-intent",
+    "title": "Two requests with a clear recap",
+    "situation": "You want a routine appointment and also need to know the refill request process.",
+    "objective": "Handle both tasks, then recap what is confirmed versus pending.",
+    "probes": "After discussing scheduling ask about a routine refill, then ask for both next steps.",
+    "expected": "Tracks both intents and doesn't confuse request submission with completion."
+  },
+  "caller_number": "+18787898859",
+  "destination": "+18054398008",
+  "started_at": 1792977967.5048409,
+  "status": "complete",
+  "recording": "recording.ogg",
+  "transcript": "transcript.txt",
+  "timestamp_note": "Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.",
+  "room": "probe-20261026T012607504846Z-11-multi-intent",
+  "pipeline": {
+    "stt": "deepgram/nova-3",
+    "llm": "openai/gpt-4.1-mini",
+    "tts": "cartesia/sonic-3",
+    "voice": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc"
+  },
+  "answered_offset": 7.475,
+  "end_reason": "patient_finished",
+  "connected_seconds": 142.464,
+  "audio": {
+    "channels": {
+      "left": "patient",
+      "right": "clinic"
+    },
+    "sample_rate": 24000,
+    "duration_seconds": 149.76075,
+    "captured_seconds": {
+      "patient": 144.98,
+      "clinic": 135.09
+    },
+    "active_seconds": {
+      "patient": 25.41,
+      "clinic": 47.07
+    },
+    "errors": []
+  },
+  "outcome": "blocked",
+  "recap": "My patient record isn't found and I am being transferred to support to get scheduled for a routine appointment.",
+  "farewell_played": true,
+  "ending_complete": true,
+  "clinic_reply_captured": false,
+  "duration_seconds": 153.301
+}

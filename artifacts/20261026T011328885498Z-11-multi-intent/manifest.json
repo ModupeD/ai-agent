@@ -47,5 +47,11 @@
   "farewell_played": true,
   "ending_complete": true,
   "clinic_reply_captured": true,
-  "duration_seconds": 154.688
+  "duration_seconds": 154.688,
+  "quality_review": {
+    "status": "rejected",
+    "reason": "Caller speaks over clinic/customer care during closing; replace this attempt.",
+    "reviewer": "assistant",
+    "evidence_source": "User listening feedback and overlapping RTC speaking states at 134.67\u2013145.87s"
+  }
 }

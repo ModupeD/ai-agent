@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "offset": 20.86,
+    "speaker": "clinic",
+    "text": "This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?",
+    "interrupted": false
+  },
+  {
+    "id": 2,
+    "offset": 27.558,
+    "speaker": "patient",
+    "text": "Hi, this is Jordan Ellis. I'd like to schedule a routine appointment, please.",
+    "interrupted": false
+  },
+  {
+    "id": 3,
+    "offset": 33.461,
+    "speaker": "clinic",
+    "text": "Please provide your date of birth.",
+    "interrupted": false
+  },
+  {
+    "id": 4,
+    "offset": 37.716,
+    "speaker": "patient",
+    "text": "My date of birth is April 16, 1987.",
+    "interrupted": false
+  },
+  {
+    "id": 5,
+    "offset": 53.463,
+    "speaker": "clinic",
+    "text": "Just to confirm, I have your name as Jordan Ellis and your date of birth as April six sixteenth nineteen eighty seven. Is that correct? If so, please spell out your first and last name for me.",
+    "interrupted": false
+  },
+  {
+    "id": 6,
+    "offset": 65.854,
+    "speaker": "patient",
+    "text": "Yes, that is correct. My first name is spelled J-O-R-D-A-N and my last name is E-L-L-I-S.",
+    "interrupted": false
+  },
+  {
+    "id": 7,
+    "offset": 81.015,
+    "speaker": "clinic",
+    "text": "Would you like to use your phone number to look up your record? If so, please provide the number you have on file with us. If you are not sure, let me know, and I will confirm your name and date of birth again.",
+    "interrupted": false
+  },
+  {
+    "id": 8,
+    "offset": 86.719,
+    "speaker": "patient",
+    "text": "Yes, please use my phone number. The number is +18787898859.",
+    "interrupted": false
+  },
+  {
+    "id": 9,
+    "offset": 102.065,
+    "speaker": "clinic",
+    "text": "I have your phone number as eight seven eight seven eight nine eight eight five nine. And your date of birth as April sixteenth nineteen eighty seven. Is that correct?",
+    "interrupted": false
+  },
+  {
+    "id": 10,
+    "offset": 108.604,
+    "speaker": "patient",
+    "text": "Yes, that's correct. Can you please tell me what dates and times are available for the routine appointment?",
+    "interrupted": false
+  },
+  {
+    "id": 11,
+    "offset": 130.16,
+    "speaker": "clinic",
+    "text": "I can't access the schedule until your patient record is found. I'll connect you to our patient support team so they can help you get scheduled. Please stay on the line. Transferring you now. Thank you. Hello. You've reached the Pretty Good AI test line. Goodbye.",
+    "interrupted": false
+  },
+  {
+    "id": 12,
+    "offset": 141.527,
+    "speaker": "patient",
+    "text": "My patient record isn't found and I am being transferred to support to get scheduled for a routine appointment. Thank you for your help. Goodbye.",
+    "interrupted": false
+  }
+]

@@ -36,6 +36,7 @@ logger = logging.getLogger(__name__)
 GREETING_WAIT_SECONDS = 12.0
 CLOSING_REPLY_TIMEOUT_SECONDS = 8.0
 AUDIO_DRAIN_SECONDS = 0.4
+CLINIC_QUIET_SECONDS = 1.2
 
 
 async def validate_trunk(client: api.LiveKitAPI, settings: Settings) -> None:
@@ -64,6 +65,7 @@ class Patient(Agent):
         self.farewell_played = False
         self.finish_completed = False
         self.clinic_speaking = False
+        self.clinic_activity_at = 0.0
         self.clinic_reply_recorded = asyncio.Event()
         self.clinic_state_changed = asyncio.Event()
         self._ending_lock = asyncio.Lock()
@@ -99,12 +101,32 @@ class Patient(Agent):
 
     def note_clinic_state(self, state: str) -> None:
         self.clinic_speaking = state == "speaking"
+        self.clinic_activity_at = time.monotonic()
         self.clinic_state_changed.set()
 
     def note_clinic_turn(self) -> None:
         # Called only after the clinic's actual transcript has been persisted.
+        self.clinic_activity_at = time.monotonic()
+        self.clinic_state_changed.set()
         if self.farewell_played:
             self.clinic_reply_recorded.set()
+
+    async def wait_for_clinic_quiet(self) -> None:
+        # A tool can be invoked while the other party is already speaking.
+        # Wait for sustained silence, restarting the window if speech resumes.
+        await asyncio.sleep(0)
+        while True:
+            self.clinic_state_changed.clear()
+            remaining = CLINIC_QUIET_SECONDS - (time.monotonic() - self.clinic_activity_at)
+            if not self.clinic_speaking and remaining <= 0:
+                return
+            try:
+                await asyncio.wait_for(
+                    self.clinic_state_changed.wait(),
+                    timeout=None if self.clinic_speaking else remaining,
+                )
+            except asyncio.TimeoutError:
+                pass
 
     @function_tool
     async def finish_call(
@@ -132,13 +154,23 @@ class Patient(Agent):
             await context.wait_for_playout()
             self.closing = True
             self.outcome, self.recap = outcome, recap
-            handle = self.session.say(
-                f"{recap} Thank you for your help. Goodbye.",
-                allow_interruptions=False,
-            )
-            await handle.wait_for_playout()
+            try:
+                await self.wait_for_clinic_quiet()
+                handle = self.session.say(
+                    f"{recap} Thank you for your help. Goodbye.",
+                    allow_interruptions=True,
+                )
+                await handle.wait_for_playout()
+            except asyncio.CancelledError:
+                # Clinic barge-in can cancel the pending tool. Continue listening
+                # and let the next clinic turn be handled normally.
+                self.closing = False
+                self.outcome, self.recap = None, None
+                raise
             if handle.interrupted:
-                raise RuntimeError("Closing speech was interrupted; cannot confirm a natural end")
+                self.closing = False
+                self.outcome, self.recap = None, None
+                return
             self.farewell_played = True
         # Returning None suppresses an automatic LLM follow-up. The call loop
         # listens for the clinic's farewell before disconnecting either audio track.

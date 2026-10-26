@@ -114,3 +114,23 @@ def test_speech_to_speech_configuration_is_rejected(configured_env, monkeypatch)
     monkeypatch.setenv("LLM_MODEL", "openai/realtime")
     with pytest.raises(ValueError, match="separate STT"):
         Settings.load()
+
+
+def test_human_rejection_excludes_an_otherwise_complete_call(tmp_path):
+    call = CallArtifacts(tmp_path, {"id": "overlap"}, "+12125550123")
+    for _ in range(3):
+        call.turn("patient", "Thanks for your help.")
+        call.turn("clinic", "You're welcome.")
+    call.save(
+        status="complete",
+        connected_seconds=65,
+        audio={"active_seconds": {"patient": 8, "clinic": 10}},
+    )
+    sf.write(
+        call.path / "recording.ogg", np.zeros((61 * 8000, 2)), 8000, format="OGG", subtype="VORBIS"
+    )
+    assert audit(tmp_path)["passing_calls"] == 1
+    call.save(quality_review={"status": "rejected", "reason": "Caller talks over clinic"})
+    result = audit(tmp_path)
+    assert result["passing_calls"] == 0
+    assert any("listening review" in p for p in result["calls"][0]["problems"])

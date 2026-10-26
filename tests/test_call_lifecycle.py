@@ -122,6 +122,7 @@ def harness(monkeypatch, tmp_path):
         monkeypatch.setattr(caller.inference, name, Mock(return_value=object()))
     monkeypatch.setattr(caller, "GREETING_WAIT_SECONDS", 0.001)
     monkeypatch.setattr(caller, "AUDIO_DRAIN_SECONDS", 0)
+    monkeypatch.setattr(caller, "CLINIC_QUIET_SECONDS", 0)
     return settings, service, session, recorder
 
 
