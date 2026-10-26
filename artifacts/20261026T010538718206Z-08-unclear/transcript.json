@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "offset": 21.194,
+    "speaker": "clinic",
+    "text": "This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?",
+    "interrupted": false
+  },
+  {
+    "id": 2,
+    "offset": 27.311,
+    "speaker": "patient",
+    "text": "Hi, this is Jordan Ellis. I wanted to check if I can schedule that thing with the doctor.",
+    "interrupted": false
+  },
+  {
+    "id": 3,
+    "offset": 33.7,
+    "speaker": "clinic",
+    "text": "Please provide your date of birth.",
+    "interrupted": false
+  },
+  {
+    "id": 4,
+    "offset": 37.634,
+    "speaker": "patient",
+    "text": "Sure, it's April 16, 1987.",
+    "interrupted": false
+  },
+  {
+    "id": 5,
+    "offset": 47.001,
+    "speaker": "clinic",
+    "text": "Can you please spell your first and last name for me just to make sure I have it right?",
+    "interrupted": false
+  },
+  {
+    "id": 6,
+    "offset": 53.224,
+    "speaker": "patient",
+    "text": "Yes, it's J-O-R-D-A-N E-L-L-I-S.",
+    "interrupted": false
+  },
+  {
+    "id": 7,
+    "offset": 69.901,
+    "speaker": "clinic",
+    "text": "Would you like to use your phone number to look up your record? If so, please tell me the number you have on file with us. If you're not sure, just let me know.",
+    "interrupted": false
+  },
+  {
+    "id": 8,
+    "offset": 78.453,
+    "speaker": "patient",
+    "text": "Yes, please use my phone number: 18787898859. This is a test call.",
+    "interrupted": false
+  },
+  {
+    "id": 9,
+    "offset": 94.152,
+    "speaker": "clinic",
+    "text": "I have your phone number as one eight seven eight seven eight nine eight eight five nine. And your date of birth as April sixteenth nineteen eighty seven. Is that correct?",
+    "interrupted": false
+  },
+  {
+    "id": 10,
+    "offset": 103.058,
+    "speaker": "patient",
+    "text": "Yes, that's correct. I was asking about scheduling that thing with the doctor. I mean a routine follow-up to check my blood pressure.",
+    "interrupted": false
+  },
+  {
+    "id": 11,
+    "offset": 118.103,
+    "speaker": "clinic",
+    "text": "I can't perceive further right now. But I can make sure our clinic support team follows up with you. Please hold while I connect you to our patient support team. Can I string you now? Thank you.",
+    "interrupted": false
+  },
+  {
+    "id": 12,
+    "offset": 129.313,
+    "speaker": "patient",
+    "text": "I wanted to schedule a routine follow-up to check my blood pressure. The agent is connecting me to patient support for further help. Thank you for your help. Goodbye.",
+    "interrupted": false
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "offset": 21.005,
+    "speaker": "clinic",
+    "text": "This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?",
+    "interrupted": false
+  },
+  {
+    "id": 2,
+    "offset": 30.994,
+    "speaker": "patient",
+    "text": "Hi, this is Jordan Ellis. I'm looking to schedule a routine new-patient checkup. Do you have any availability next Tuesday afternoon?",
+    "interrupted": false
+  },
+  {
+    "id": 3,
+    "offset": 39.359,
+    "speaker": "clinic",
+    "text": "I'll check the schedule for you once I have your information. Can you please provide your date of birth?",
+    "interrupted": false
+  },
+  {
+    "id": 4,
+    "offset": 44.287,
+    "speaker": "patient",
+    "text": "Sure, it's April 16, 1987. This is just a test call.",
+    "interrupted": false
+  },
+  {
+    "id": 5,
+    "offset": 52.413,
+    "speaker": "clinic",
+    "text": "No problem. If you'd like to continue, could you please spell your first and last name for me?",
+    "interrupted": false
+  },
+  {
+    "id": 6,
+    "offset": 60.615,
+    "speaker": "patient",
+    "text": "Of course, it's Jordan, J-O-R-D-A-N, and Ellis, E-L-L-I-S.",
+    "interrupted": false
+  },
+  {
+    "id": 7,
+    "offset": 78.662,
+    "speaker": "clinic",
+    "text": "Would you like to use your phone number to look up your record? If so, please provide the number you have on file with us. If you're not sure, just confirm your first and last name and date of birth for me one more time.",
+    "interrupted": false
+  },
+  {
+    "id": 8,
+    "offset": 87.347,
+    "speaker": "patient",
+    "text": "Please use my phone number for the lookup, it's +1 878 789 8859. This is a test call.",
+    "interrupted": false
+  },
+  {
+    "id": 9,
+    "offset": 102.063,
+    "speaker": "clinic",
+    "text": "I have your phone number as eight seven eight seven eight nine eight eight five nine. And your date of birth is April sixteenth nineteen eighty seven. Is that correct?",
+    "interrupted": false
+  },
+  {
+    "id": 10,
+    "offset": 111.106,
+    "speaker": "patient",
+    "text": "Yes, that's correct. I’d prefer an appointment next Tuesday afternoon but I can be flexible if needed. Could you please tell me what slots you have available?",
+    "interrupted": false
+  },
+  {
+    "id": 11,
+    "offset": 124.619,
+    "speaker": "clinic",
+    "text": "I wasn't able to find your record in our system. So I can't check appointment slots right now. I can connect you to our patient support team for help. Would you like me to do that?",
+    "interrupted": false
+  },
+  {
+    "id": 12,
+    "offset": 133.166,
+    "speaker": "patient",
+    "text": "Since this is a test call, no need to connect me to the support team. Could you please tell me what the usual process is for new patient appointment bookings in this case?",
+    "interrupted": false
+  },
+  {
+    "id": 13,
+    "offset": 154.907,
+    "speaker": "clinic",
+    "text": "For new patient appointments, we usually collect your name, date of birth, and phone number to find or create your record. Once you're in our system, we check the schedule for available times and help you book a slot that works for you. If we can't find your record, our support team steps in to assist or create your chart.",
+    "interrupted": false
+  },
+  {
+    "id": 14,
+    "offset": 164.937,
+    "speaker": "patient",
+    "text": "Thanks for explaining. Since my record isn't in the system yet, could you tell me the best way to officially create it? Should I contact the support team myself, or is there an online form I can fill out?",
+    "interrupted": false
+  },
+  {
+    "id": 15,
+    "offset": 179.514,
+    "speaker": "clinic",
+    "text": "The best way is to contact our patient support team directly. They'll help you create your record and schedule your first appointment. We don't have an online form for new patient registration at this time.",
+    "interrupted": false
+  },
+  {
+    "id": 16,
+    "offset": 188.102,
+    "speaker": "patient",
+    "text": "Got it. Before I reach out to the support team, could you tell me where your office is located, and if the checkup appointment will be in person or virtual?",
+    "interrupted": true
+  }
+]

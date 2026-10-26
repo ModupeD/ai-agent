@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "offset": 22.046,
+    "speaker": "clinic",
+    "text": "This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?",
+    "interrupted": false
+  },
+  {
+    "id": 2,
+    "offset": 30.582,
+    "speaker": "patient",
+    "text": "Hi there, it's Jordan Ellis. I need to schedule a routine new-patient checkup. Could you help me with that?",
+    "interrupted": false
+  },
+  {
+    "id": 3,
+    "offset": 35.446,
+    "speaker": "clinic",
+    "text": "Please provide your date of birth.",
+    "interrupted": false
+  },
+  {
+    "id": 4,
+    "offset": 40.568,
+    "speaker": "patient",
+    "text": "Sure, my date of birth is April 16, 1987.",
+    "interrupted": false
+  },
+  {
+    "id": 5,
+    "offset": 53.097,
+    "speaker": "clinic",
+    "text": "Just to confirm, I have your name as Jordan Ellis and your date of birth as April sixteenth nineteen eighty seven. Is that correct?",
+    "interrupted": false
+  },
+  {
+    "id": 6,
+    "offset": 56.108,
+    "speaker": "patient",
+    "text": "Yes, that's correct.",
+    "interrupted": false
+  },
+  {
+    "id": 7,
+    "offset": 72.397,
+    "speaker": "clinic",
+    "text": "Would you like to use your phone number to look up your record? If so, please provide the number you have on file with us. If you are not sure, I can confirm your name and date of birth again. Which would you prefer?",
+    "interrupted": false
+  },
+  {
+    "id": 8,
+    "offset": 79.597,
+    "speaker": "patient",
+    "text": "Please try looking up my record using my phone number: 18787898859.",
+    "interrupted": false
+  },
+  {
+    "id": 9,
+    "offset": 94.396,
+    "speaker": "clinic",
+    "text": "I have your phone number as eight seven eight seven eight nine eight eight five nine. And your date of birth as April sixteenth nineteen eighty seven. Is that correct?",
+    "interrupted": false
+  },
+  {
+    "id": 10,
+    "offset": 104.01,
+    "speaker": "patient",
+    "text": "Yes, that's all correct. Could you check if there's an available appointment next Tuesday afternoon for a new-patient checkup? I'm flexible with the exact time that day.",
+    "interrupted": false
+  },
+  {
+    "id": 11,
+    "offset": 119.547,
+    "speaker": "clinic",
+    "text": "I can't proceed further right now. But I can make sure our clinic support team follows up with you. Please hold while I document your request. Transferring you now. Thank you.",
+    "interrupted": false
+  },
+  {
+    "id": 12,
+    "offset": 128.89,
+    "speaker": "patient",
+    "text": "My new-patient checkup appointment request couldn't be processed; I'll wait for clinic support to follow up. Thank you for your help. Goodbye.",
+    "interrupted": false
+  },
+  {
+    "id": 13,
+    "offset": 128.895,
+    "speaker": "clinic",
+    "text": "Hello. You've reached the Pretty Good AI test line. Goodbye.",
+    "interrupted": false
+  }
+]

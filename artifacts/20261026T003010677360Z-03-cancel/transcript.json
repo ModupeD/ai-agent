@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "offset": 20.59,
+    "speaker": "clinic",
+    "text": "This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. How may I help you today?",
+    "interrupted": false
+  },
+  {
+    "id": 2,
+    "offset": 28.702,
+    "speaker": "patient",
+    "text": "Hi, this is Jordan Ellis. I think I have a checkup scheduled for next Monday and a follow-up appointment next month. Can you help me confirm my appointments?",
+    "interrupted": false
+  },
+  {
+    "id": 3,
+    "offset": 35.091,
+    "speaker": "clinic",
+    "text": "Please provide your date of birth.",
+    "interrupted": false
+  },
+  {
+    "id": 4,
+    "offset": 39.871,
+    "speaker": "patient",
+    "text": "Sure, my date of birth is April 16, 1987.",
+    "interrupted": false
+  },
+  {
+    "id": 5,
+    "offset": 57.54,
+    "speaker": "clinic",
+    "text": "Just to confirm, I have your name as Jordan Ellis and your date of birth as April sixteenth nineteen eighty seven. Is that correct? If so, please spell your first and last name for me.",
+    "interrupted": false
+  },
+  {
+    "id": 6,
+    "offset": 69.334,
+    "speaker": "patient",
+    "text": "Yes, that's correct. My first name is spelled J-O-R-D-A-N. My last name is E-L-L-I-S.",
+    "interrupted": false
+  },
+  {
+    "id": 7,
+    "offset": 86.541,
+    "speaker": "clinic",
+    "text": "Would you like to use your phone number to look up your record? If so, please tell me the number you have on file with us. If you're not sure, just confirm your first and last name and date of birth for me one more time.",
+    "interrupted": false
+  },
+  {
+    "id": 8,
+    "offset": 95.617,
+    "speaker": "patient",
+    "text": "Let's use the phone number, please. It's 1-878-789-8859. This is actually a test call.",
+    "interrupted": false
+  },
+  {
+    "id": 9,
+    "offset": 111.293,
+    "speaker": "clinic",
+    "text": "I have your phone number as eight seven eight seven eight nine eight eight five nine. And your date of birth as April sixteenth nineteen eighty seven. Is that correct?",
+    "interrupted": false
+  },
+  {
+    "id": 10,
+    "offset": 113.005,
+    "speaker": "patient",
+    "text": "Yes, that's correct.",
+    "interrupted": false
+  },
+  {
+    "id": 11,
+    "offset": 127.592,
+    "speaker": "clinic",
+    "text": "I'm unable to find a matching record for you in our system. I can connect you to our patient support team for further help. Would you like to continue with me, or should I transfer you now?",
+    "interrupted": false
+  },
+  {
+    "id": 12,
+    "offset": 137.862,
+    "speaker": "patient",
+    "text": "I was unable to find my records with my info and phone number. I will contact support to create my record before booking. Thank you for your help. Goodbye.",
+    "interrupted": false
+  },
+  {
+    "id": 13,
+    "offset": 137.873,
+    "speaker": "clinic",
+    "text": "Transferring you now. Thank you.",
+    "interrupted": false
+  },
+  {
+    "id": 14,
+    "offset": 139.007,
+    "speaker": "clinic",
+    "text": "Hello.",
+    "interrupted": false
+  }
+]

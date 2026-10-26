@@ -1,0 +1,3 @@
+Call: 20261025T182524996498Z-01-schedule
+Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.
+

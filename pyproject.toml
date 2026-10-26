@@ -1,0 +1,37 @@
+[project]
+name = "call-agent"
+version = "0.1.0"
+description = "A pipeline voice caller for evidence-based telephone agent testing"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+  "livekit-agents[silero]>=1.8.6,<1.9",
+  "livekit-api>=1,<2",
+  "numpy>=2,<3",
+  "soundfile>=0.13,<1",
+  "python-dotenv>=1,<2",
+  "pydantic>=2,<3",
+  "typer>=0.16,<1",
+]
+
+[project.scripts]
+call-agent = "patient_probe.cli:app"
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pytest-asyncio>=1,<2", "ruff>=0.12,<1"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/patient_probe/cli.py" = ["B008"]

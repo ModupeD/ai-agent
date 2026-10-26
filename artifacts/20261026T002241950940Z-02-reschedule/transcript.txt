@@ -1,0 +1,14 @@
+Call: 20261026T002241950940Z-02-reschedule
+Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.
+
+[00:21] clinic: This call may be recorded for quality and training Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. How may I help you today?
+[00:31] patient: Hi, this is Jordan Ellis. I think I have a checkup scheduled next Wednesday at 9 AM, but I can't make that time anymore. Can you help me move it to a weekday afternoon?
+[00:38] clinic: You please provide your date of birth?
+[00:43] patient: Sure, it's April 16, 1987.
+[00:57] clinic: Just to confirm, can you please spell your first and last name for me? And your date of birth, is April sixteenth nineteen eighty seven. Correct?
+[01:05] patient: Yes, that's correct. My name is spelled J-o-r-d-a-n E-l-l-i-s.
+[01:13] clinic: Thank you. Can you confirm your date of birth as April sixteenth nineteen eighty seven?
+[01:18] patient: Yes, my date of birth is April 16, 1987.
+[01:33] clinic: I can't proceed further right now, but I can make sure our clinic support team follows up with you. Would you like me to connect you to our patient support team?
+[01:45] patient: No matching visit was found for my appointment, and the office cannot proceed further now. They offered to connect me to patient support for follow-up. Thank you for your help. Goodbye.
+[01:55] clinic: I understand. I'll connect you to our patient support team so they can help sort this out for you. Please stay on the line. Transferring you now. Thank you. Hello. You've reached the Pretty Good AI test line. Goodbye.

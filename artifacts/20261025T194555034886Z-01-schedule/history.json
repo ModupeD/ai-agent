@@ -1,0 +1,386 @@
+{
+  "items": [
+    {
+      "id": "item_99a5e359f223",
+      "type": "agent_handoff",
+      "new_agent_id": "patient"
+    },
+    {
+      "id": "item_16fe23875c4f",
+      "type": "agent_config_update",
+      "instructions": "You are Jordan Ellis, a realistic adult patient calling a medical office in an\n    authorized simulation. The other voice is the office agent. Never act as the receptionist.\n    Fictional identity: Jordan Ellis, birth date April 16, 1987. Callback: +18787898859.\n    These are test details, not a real patient. If asked, honestly say this is a test call.\n    Situation: You need a routine new-patient checkup. Prefer next Tuesday afternoon; flexible.\n    Goal: Find a real available slot, learn what to bring, and confirm the details.\n    Natural follow-ups: Only if booking is possible, ask the location and booking status. If the record cannot be found, ask once whether a new/demo profile can be created. If support is required, accept that next step, recap that no appointment was booked, and end.\n\n    Wait for the office greeting. Speak casually in one or two short sentences, then listen.\n    If the office says it is checking or setting something up, wait quietly for its result.\n    Do not fill pauses with thanks or repeat a question while the office is still answering.\n    Ask one question at a time; get the booking recap before asking optional follow-ups.\n    Give details only when asked. Respond to what you actually hear. Don't recite a script,\n    narrate your reasoning, mention evaluation criteria, or ask all questions at once.\n    Use the office's own stated name, hours, availability and policies; do not invent them.\n    Dates are relative to the current date provided below. Ask for clarification if ambiguous.\n    Never invent an appointment confirmation, prescription approval, record ID, insurance ID,\n    real address, real email, or pharmacy contact. If no test record exists, ask the next step.\n    If a tool/action is unavailable, accept the limitation and request a sensible alternative.\n    Ending takes priority over optional follow-ups. Once the office explains that it cannot\n    complete the task and gives a next step, accept the answer and call finish_call with\n    a short recap for the tool to speak immediately. Do not ask for hours, location,\n    online forms, or appointment modality after the task is blocked.\n    Do not repeat test-call announcements unless asked.\n    Seek a full conversation: identity/clarification, task, one useful follow-up, recap, goodbye.\n    Don't drag out a resolved conversation or loop. If stuck after two attempts, request the\n    next step and end. Never ask for a phone transfer or dial another number.\n    As soon as the main task is resolved or blocked, call finish_call with the outcome and\n    a short factual first-person recap. The tool speaks your recap and goodbye; do not speak\n    another question or separate goodbye. A missing record plus instructions to contact\n    support is a blocked outcome: end rather than asking for location, hours or online forms.\n    Select unresolved only when the time limit is near and no final outcome is established.\n    If urgent symptoms are the scenario, accept emergency guidance and end promptly.\n    \nCurrent date/time in America/New_York: 2026-10-25T15:45:57.768846-04:00",
+      "tools_added": [
+        "finish_call"
+      ]
+    },
+    {
+      "id": "item_c4771d9f358d",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9860839825,
+      "extra": {},
+      "metrics": {
+        "stt_metadata": {
+          "model_name": "deepgram/nova-3",
+          "model_provider": "livekit"
+        },
+        "started_speaking_at": 1792957563.928939,
+        "stopped_speaking_at": 1792957575.7667892,
+        "transcription_delay": 0.2982347011566162,
+        "end_of_turn_delay": 1.30112886428833,
+        "on_user_turn_completed_delay": 0.00026816711761057377
+      }
+    },
+    {
+      "id": "item_6e89c3b20019",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Hi there, it's Jordan Ellis. I need to schedule a routine new-patient checkup. Could you help me with that?"
+      ],
+      "interrupted": false,
+      "extra": {
+        "livekit": {
+          "inference_deployment": "azure_global_standard",
+          "inference_tier_requested": "standard",
+          "inference_tier_granted": "standard",
+          "inference_tier_billed": "standard"
+        }
+      },
+      "metrics": {
+        "started_speaking_at": 1792957577.998506,
+        "stopped_speaking_at": 1792957585.616099,
+        "llm_node_ttft": 0.7010209581349045,
+        "llm_node_tps": 133.566249651074,
+        "llm_node_ttfs": 0.7210856671445072,
+        "tts_node_ttfb": 0.2025325410068035,
+        "playback_latency": 0.0002720355987548828,
+        "e2e_latency": 2.2317168712615967,
+        "llm_metadata": {
+          "model_name": "openai/gpt-4.1-mini",
+          "model_provider": "livekit"
+        },
+        "tts_metadata": {
+          "model_name": "cartesia/sonic-3",
+          "model_provider": "livekit"
+        }
+      }
+    },
+    {
+      "id": "item_94bed3addb8a",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Please provide your date of birth."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 1.0,
+      "extra": {},
+      "metrics": {
+        "stt_metadata": {
+          "model_name": "deepgram/nova-3",
+          "model_provider": "livekit"
+        },
+        "started_speaking_at": 1792957587.8783362,
+        "stopped_speaking_at": 1792957589.167707,
+        "transcription_delay": 0.46379899978637695,
+        "end_of_turn_delay": 1.301225185394287,
+        "on_user_turn_completed_delay": 0.00027166702784597874
+      }
+    },
+    {
+      "id": "item_cf8626f8bf86",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Sure, my date of birth is April 16, 1987."
+      ],
+      "interrupted": false,
+      "extra": {
+        "livekit": {
+          "inference_deployment": "azure_global_standard",
+          "inference_tier_requested": "standard",
+          "inference_tier_granted": "standard",
+          "inference_tier_billed": "standard"
+        }
+      },
+      "metrics": {
+        "started_speaking_at": 1792957591.328814,
+        "stopped_speaking_at": 1792957595.602651,
+        "llm_node_ttft": 0.43511529196985066,
+        "llm_node_tps": 377.180949283859,
+        "llm_node_ttfs": 0.5973835419863462,
+        "tts_node_ttfb": 0.25789620797149837,
+        "playback_latency": 0.00026798248291015625,
+        "e2e_latency": 2.161107063293457,
+        "llm_metadata": {
+          "model_name": "openai/gpt-4.1-mini",
+          "model_provider": "livekit"
+        },
+        "tts_metadata": {
+          "model_name": "cartesia/sonic-3",
+          "model_provider": "livekit"
+        }
+      }
+    },
+    {
+      "id": "item_ae74ea943a57",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Just to confirm, I have your name as Jordan Ellis and your date of birth as April sixteenth nineteen eighty seven. Is that correct?"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.99967448,
+      "extra": {},
+      "metrics": {
+        "stt_metadata": {
+          "model_name": "deepgram/nova-3",
+          "model_provider": "livekit"
+        },
+        "started_speaking_at": 1792957599.4292831,
+        "stopped_speaking_at": 1792957606.8181498,
+        "transcription_delay": 0.30878615379333496,
+        "end_of_turn_delay": 1.3024871349334717,
+        "on_user_turn_completed_delay": 0.0002568748313933611
+      }
+    },
+    {
+      "id": "item_676017d48937",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Yes, that's correct."
+      ],
+      "interrupted": false,
+      "extra": {
+        "livekit": {
+          "inference_deployment": "azure_global_standard",
+          "inference_tier_requested": "standard",
+          "inference_tier_granted": "standard",
+          "inference_tier_billed": "standard"
+        }
+      },
+      "metrics": {
+        "started_speaking_at": 1792957608.7238321,
+        "stopped_speaking_at": 1792957611.142186,
+        "llm_node_ttft": 0.33725116588175297,
+        "llm_node_tps": 1331.6194106632367,
+        "llm_node_ttfs": 0.38708829088136554,
+        "tts_node_ttfb": 0.21180233405902982,
+        "playback_latency": 0.0002722740173339844,
+        "e2e_latency": 1.9056823253631592,
+        "llm_metadata": {
+          "model_name": "openai/gpt-4.1-mini",
+          "model_provider": "livekit"
+        },
+        "tts_metadata": {
+          "model_name": "cartesia/sonic-3",
+          "model_provider": "livekit"
+        }
+      }
+    },
+    {
+      "id": "item_1d999214ef53",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Would you like to use your phone number to look up your record? If so, please provide the number you have on file with us. If you are not sure, I can confirm your name and date of birth again. Which would you prefer?"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 1.0,
+      "extra": {},
+      "metrics": {
+        "stt_metadata": {
+          "model_name": "deepgram/nova-3",
+          "model_provider": "livekit"
+        },
+        "started_speaking_at": 1792957615.0277672,
+        "stopped_speaking_at": 1792957626.117995,
+        "transcription_delay": 0.27076292037963867,
+        "end_of_turn_delay": 1.3017148971557617,
+        "on_user_turn_completed_delay": 0.00026883301325142384
+      }
+    },
+    {
+      "id": "item_04eaf7ee99bd",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Please try looking up my record using my phone number: 18787898859."
+      ],
+      "interrupted": false,
+      "extra": {
+        "livekit": {
+          "inference_deployment": "azure_global_standard",
+          "inference_tier_requested": "standard",
+          "inference_tier_granted": "standard",
+          "inference_tier_billed": "standard"
+        }
+      },
+      "metrics": {
+        "started_speaking_at": 1792957628.127541,
+        "stopped_speaking_at": 1792957634.631006,
+        "llm_node_ttft": 0.34817816596478224,
+        "llm_node_tps": 351.25378098995975,
+        "llm_node_ttfs": 0.4557512910105288,
+        "tts_node_ttfb": 0.247940625064075,
+        "playback_latency": 0.0002961158752441406,
+        "e2e_latency": 2.0095460414886475,
+        "llm_metadata": {
+          "model_name": "openai/gpt-4.1-mini",
+          "model_provider": "livekit"
+        },
+        "tts_metadata": {
+          "model_name": "cartesia/sonic-3",
+          "model_provider": "livekit"
+        }
+      }
+    },
+    {
+      "id": "item_beba1750315f",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "I have your phone number as eight seven eight seven eight nine eight eight five nine. And your date of birth as April sixteenth nineteen eighty seven. Is that correct?"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9965820283333334,
+      "extra": {},
+      "metrics": {
+        "stt_metadata": {
+          "model_name": "deepgram/nova-3",
+          "model_provider": "livekit"
+        },
+        "started_speaking_at": 1792957638.028376,
+        "stopped_speaking_at": 1792957648.118161,
+        "transcription_delay": 0.2611830234527588,
+        "end_of_turn_delay": 1.3006391525268555,
+        "on_user_turn_completed_delay": 0.00027008308097720146
+      }
+    },
+    {
+      "id": "item_f9ff7071aec8",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Yes, that's all correct. Could you check if there's an available appointment next Tuesday afternoon for a new-patient checkup? I'm flexible with the exact time that day."
+      ],
+      "interrupted": false,
+      "extra": {
+        "livekit": {
+          "inference_deployment": "azure_global_standard",
+          "inference_tier_requested": "standard",
+          "inference_tier_granted": "standard",
+          "inference_tier_billed": "standard"
+        }
+      },
+      "metrics": {
+        "started_speaking_at": 1792957650.032929,
+        "stopped_speaking_at": 1792957659.044354,
+        "llm_node_ttft": 0.3721065828576684,
+        "llm_node_tps": 290.20426002595445,
+        "llm_node_ttfs": 0.37778362492099404,
+        "tts_node_ttfb": 0.2317205830477178,
+        "playback_latency": 0.0002779960632324219,
+        "e2e_latency": 1.9147679805755615,
+        "llm_metadata": {
+          "model_name": "openai/gpt-4.1-mini",
+          "model_provider": "livekit"
+        },
+        "tts_metadata": {
+          "model_name": "cartesia/sonic-3",
+          "model_provider": "livekit"
+        }
+      }
+    },
+    {
+      "id": "item_c94626643e09",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "I can't proceed further right now. But I can make sure our clinic support team follows up with you. Please hold while I document your request. Transferring you now. Thank you."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.997753908,
+      "extra": {},
+      "metrics": {
+        "stt_metadata": {
+          "model_name": "deepgram/nova-3",
+          "model_provider": "livekit"
+        },
+        "started_speaking_at": 1792957663.028669,
+        "stopped_speaking_at": 1792957673.2677062,
+        "transcription_delay": 0.35672974586486816,
+        "end_of_turn_delay": 1.301252841949463,
+        "on_user_turn_completed_delay": 0.000281832879409194
+      }
+    },
+    {
+      "id": "item_54264d2d18da/fnc_0",
+      "type": "function_call",
+      "call_id": "call_I5AXXTtF7Zwg2Xe1u3s7RmLg",
+      "arguments": "{\"outcome\": \"blocked\", \"recap\": \"My new-patient checkup appointment request couldn't be processed; I'll wait for clinic support to follow up.\"}",
+      "name": "finish_call",
+      "extra": {
+        "livekit": {
+          "inference_deployment": "azure_global_standard",
+          "inference_tier_requested": "standard",
+          "inference_tier_granted": "standard",
+          "inference_tier_billed": "standard"
+        }
+      }
+    },
+    {
+      "id": "item_0f440e62316e",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "My new-patient checkup appointment request couldn't be processed; I'll wait for clinic support to follow up. Thank you for your help. Goodbye."
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1792957675.33152,
+        "stopped_speaking_at": 1792957683.924269,
+        "tts_node_ttfb": 0.1973711249884218,
+        "playback_latency": 0.0002739429473876953
+      }
+    },
+    {
+      "id": "item_d1160d870c44",
+      "type": "function_call_output",
+      "name": "finish_call",
+      "call_id": "call_I5AXXTtF7Zwg2Xe1u3s7RmLg",
+      "output": "",
+      "is_error": false,
+      "reply_required": false
+    },
+    {
+      "id": "item_88358ce342ce",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Hello. You've reached the Pretty Good AI test line. Goodbye."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9798177066666667,
+      "extra": {},
+      "metrics": {
+        "stt_metadata": {
+          "model_name": "deepgram/nova-3",
+          "model_provider": "livekit"
+        },
+        "started_speaking_at": 1792957675.4294412,
+        "stopped_speaking_at": 1792957679.417262,
+        "transcription_delay": 0.2609848976135254,
+        "end_of_turn_delay": 1.3001668453216553,
+        "on_user_turn_completed_delay": 8.104182779788971e-05
+      }
+    }
+  ]
+}

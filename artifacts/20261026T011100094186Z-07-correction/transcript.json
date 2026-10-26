@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "offset": 20.535,
+    "speaker": "clinic",
+    "text": "This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good How may I help you today?",
+    "interrupted": false
+  },
+  {
+    "id": 2,
+    "offset": 26.891,
+    "speaker": "patient",
+    "text": "Hi, this is Jordan Ellis. I'd like to schedule a routine visit. Do you have availability next Thursday morning?",
+    "interrupted": false
+  },
+  {
+    "id": 3,
+    "offset": 32.978,
+    "speaker": "clinic",
+    "text": "Please provide your date of birth.",
+    "interrupted": false
+  },
+  {
+    "id": 4,
+    "offset": 37.245,
+    "speaker": "patient",
+    "text": "Sure, it's April 16, 1987.",
+    "interrupted": false
+  },
+  {
+    "id": 5,
+    "offset": 51.181,
+    "speaker": "clinic",
+    "text": "Just to confirm, I have your name as Jordan Ellis and your date of birth? As April sixteenth nineteen eighty seven. Is that correct?",
+    "interrupted": false
+  },
+  {
+    "id": 6,
+    "offset": 61.695,
+    "speaker": "patient",
+    "text": "Yes, that's correct. Thank you.",
+    "interrupted": false
+  },
+  {
+    "id": 7,
+    "offset": 63.732,
+    "speaker": "clinic",
+    "text": "Would you like to use your phone number to look",
+    "interrupted": false
+  },
+  {
+    "id": 8,
+    "offset": 67.222,
+    "speaker": "patient",
+    "text": "Yes, please use my phone number: +18787898859.",
+    "interrupted": true
+  },
+  {
+    "id": 9,
+    "offset": 67.236,
+    "speaker": "clinic",
+    "text": "And once enabled, the",
+    "interrupted": false
+  },
+  {
+    "id": 10,
+    "offset": 74.904,
+    "speaker": "patient",
+    "text": "Sorry, I meant Friday, not Thursday. Could you please check availability for a routine visit on Friday morning instead?",
+    "interrupted": true
+  },
+  {
+    "id": 11,
+    "offset": 84.191,
+    "speaker": "clinic",
+    "text": "I can't verify your record right now. So I'm unable to schedule your appointment. I'll connect you to our patient support team for help. Please stay on the line. Transferring you now. Thank you.",
+    "interrupted": false
+  },
+  {
+    "id": 12,
+    "offset": 92.924,
+    "speaker": "patient",
+    "text": "I couldn't verify my record, so I couldn't schedule the appointment. They transferred me to patient support for help. Thank you for your help. Goodbye.",
+    "interrupted": false
+  },
+  {
+    "id": 13,
+    "offset": 92.933,
+    "speaker": "clinic",
+    "text": "Hello. You've reached the Pretty Good AI test line. Goodbye.",
+    "interrupted": false
+  }
+]

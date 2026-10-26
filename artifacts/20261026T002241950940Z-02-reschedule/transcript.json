@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "offset": 21.956,
+    "speaker": "clinic",
+    "text": "This call may be recorded for quality and training Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. How may I help you today?",
+    "interrupted": false
+  },
+  {
+    "id": 2,
+    "offset": 31.297,
+    "speaker": "patient",
+    "text": "Hi, this is Jordan Ellis. I think I have a checkup scheduled next Wednesday at 9 AM, but I can't make that time anymore. Can you help me move it to a weekday afternoon?",
+    "interrupted": false
+  },
+  {
+    "id": 3,
+    "offset": 38.807,
+    "speaker": "clinic",
+    "text": "You please provide your date of birth?",
+    "interrupted": false
+  },
+  {
+    "id": 4,
+    "offset": 43.234,
+    "speaker": "patient",
+    "text": "Sure, it's April 16, 1987.",
+    "interrupted": false
+  },
+  {
+    "id": 5,
+    "offset": 57.556,
+    "speaker": "clinic",
+    "text": "Just to confirm, can you please spell your first and last name for me? And your date of birth, is April sixteenth nineteen eighty seven. Correct?",
+    "interrupted": false
+  },
+  {
+    "id": 6,
+    "offset": 65.552,
+    "speaker": "patient",
+    "text": "Yes, that's correct. My name is spelled J-o-r-d-a-n E-l-l-i-s.",
+    "interrupted": false
+  },
+  {
+    "id": 7,
+    "offset": 73.807,
+    "speaker": "clinic",
+    "text": "Thank you. Can you confirm your date of birth as April sixteenth nineteen eighty seven?",
+    "interrupted": false
+  },
+  {
+    "id": 8,
+    "offset": 78.911,
+    "speaker": "patient",
+    "text": "Yes, my date of birth is April 16, 1987.",
+    "interrupted": false
+  },
+  {
+    "id": 9,
+    "offset": 93.758,
+    "speaker": "clinic",
+    "text": "I can't proceed further right now, but I can make sure our clinic support team follows up with you. Would you like me to connect you to our patient support team?",
+    "interrupted": false
+  },
+  {
+    "id": 10,
+    "offset": 105.154,
+    "speaker": "patient",
+    "text": "No matching visit was found for my appointment, and the office cannot proceed further now. They offered to connect me to patient support for follow-up. Thank you for your help. Goodbye.",
+    "interrupted": false
+  },
+  {
+    "id": 11,
+    "offset": 115.093,
+    "speaker": "clinic",
+    "text": "I understand. I'll connect you to our patient support team so they can help sort this out for you. Please stay on the line. Transferring you now. Thank you. Hello. You've reached the Pretty Good AI test line. Goodbye.",
+    "interrupted": false
+  }
+]

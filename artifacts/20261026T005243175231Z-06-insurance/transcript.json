@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "offset": 20.49,
+    "speaker": "clinic",
+    "text": "This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?",
+    "interrupted": false
+  },
+  {
+    "id": 2,
+    "offset": 32.397,
+    "speaker": "patient",
+    "text": "Hi, I'm Jordan Ellis. I have Harbor Choice PPO insurance, and I'm trying to find out if your office is in network for my plan and what my out-of-pocket costs might be. Can you help with that?",
+    "interrupted": false
+  },
+  {
+    "id": 3,
+    "offset": 39.992,
+    "speaker": "clinic",
+    "text": "Need to verify your information first. Please provide your date of birth.",
+    "interrupted": false
+  },
+  {
+    "id": 4,
+    "offset": 44.807,
+    "speaker": "patient",
+    "text": "Sure, it's April 16, 1987.",
+    "interrupted": false
+  },
+  {
+    "id": 5,
+    "offset": 61.794,
+    "speaker": "clinic",
+    "text": "Just to confirm, I have your name as Jordan Ellis and your date of birth as April sixteenth nineteen eighty seven. Is that correct? If so, please spell your first and last name for me.",
+    "interrupted": false
+  },
+  {
+    "id": 6,
+    "offset": 73.778,
+    "speaker": "patient",
+    "text": "Yes, that's correct. My first name is J-O-R-D-A-N, and my last name is E-L-L-I-S.",
+    "interrupted": false
+  },
+  {
+    "id": 7,
+    "offset": 90.394,
+    "speaker": "clinic",
+    "text": "Would you like me to look up your record using your phone number? If so, please provide the number you have on file with us. If you're not sure, I can confirm your name and date of birth again. Let me know how you'd like to proceed.",
+    "interrupted": false
+  },
+  {
+    "id": 8,
+    "offset": 98.026,
+    "speaker": "patient",
+    "text": "Yes, please look it up with my phone number. It's 1-878-789-8859.",
+    "interrupted": false
+  },
+  {
+    "id": 9,
+    "offset": 114.393,
+    "speaker": "clinic",
+    "text": "I have your phone number as one eight seven eight seven eight nine eight eight five nine, and your date of birth is April sixteenth nineteen eighty seven. Is that correct?",
+    "interrupted": false
+  },
+  {
+    "id": 10,
+    "offset": 116.422,
+    "speaker": "patient",
+    "text": "Yes, that's correct.",
+    "interrupted": false
+  },
+  {
+    "id": 11,
+    "offset": 131.046,
+    "speaker": "clinic",
+    "text": "I'm unable to find a matching record for you in our system. I can connect you to our patient support team for further help. Would you like to continue with me, or should I transfer you now?",
+    "interrupted": false
+  },
+  {
+    "id": 12,
+    "offset": 144.776,
+    "speaker": "patient",
+    "text": "Since I'm just testing, let's keep going with you. I want to know how I can verify if you accept Harbor Choice PPO for my exact plan and if that means I'm definitely in network with you. Also, can you tell me what out-of-pocket costs I might expect?",
+    "interrupted": false
+  },
+  {
+    "id": 13,
+    "offset": 173.047,
+    "speaker": "clinic",
+    "text": "I can't access specific insurance plan details or confirm exact out of pocket costs. For the most accurate answer, it's best to contact your insurance provider directly and ask if Pivot Point Orthopedics is in network for your Harbor Choice PPO plan. Your insurance company can also give you details about co pays, deductibles, and coverage. If you'd like, I can connect you to our patient support team for more help with insurance questions.",
+    "interrupted": false
+  },
+  {
+    "id": 14,
+    "offset": 185.92,
+    "speaker": "patient",
+    "text": "I learned that the office cannot confirm if my Harbor Choice PPO plan is in network or provide out-of-pocket costs. I need to contact my insurance provider for verification and cost details. Thank you for your help. Goodbye.",
+    "interrupted": false
+  }
+]

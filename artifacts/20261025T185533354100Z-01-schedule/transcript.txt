@@ -1,0 +1,19 @@
+Call: 20261025T185533354100Z-01-schedule
+Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.
+
+[00:21] clinic: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?
+[00:30] patient: Hi, this is Jordan Ellis. I'm looking to schedule a routine new-patient checkup. Do you have any availability next Tuesday afternoon?
+[00:39] clinic: I'll check the schedule for you once I have your information. Can you please provide your date of birth?
+[00:44] patient: Sure, it's April 16, 1987. This is just a test call.
+[00:52] clinic: No problem. If you'd like to continue, could you please spell your first and last name for me?
+[01:00] patient: Of course, it's Jordan, J-O-R-D-A-N, and Ellis, E-L-L-I-S.
+[01:18] clinic: Would you like to use your phone number to look up your record? If so, please provide the number you have on file with us. If you're not sure, just confirm your first and last name and date of birth for me one more time.
+[01:27] patient: Please use my phone number for the lookup, it's +1 878 789 8859. This is a test call.
+[01:42] clinic: I have your phone number as eight seven eight seven eight nine eight eight five nine. And your date of birth is April sixteenth nineteen eighty seven. Is that correct?
+[01:51] patient: Yes, that's correct. I’d prefer an appointment next Tuesday afternoon but I can be flexible if needed. Could you please tell me what slots you have available?
+[02:04] clinic: I wasn't able to find your record in our system. So I can't check appointment slots right now. I can connect you to our patient support team for help. Would you like me to do that?
+[02:13] patient: Since this is a test call, no need to connect me to the support team. Could you please tell me what the usual process is for new patient appointment bookings in this case?
+[02:34] clinic: For new patient appointments, we usually collect your name, date of birth, and phone number to find or create your record. Once you're in our system, we check the schedule for available times and help you book a slot that works for you. If we can't find your record, our support team steps in to assist or create your chart.
+[02:44] patient: Thanks for explaining. Since my record isn't in the system yet, could you tell me the best way to officially create it? Should I contact the support team myself, or is there an online form I can fill out?
+[02:59] clinic: The best way is to contact our patient support team directly. They'll help you create your record and schedule your first appointment. We don't have an online form for new patient registration at this time.
+[03:08] patient [interrupted]: Got it. Before I reach out to the support team, could you tell me where your office is located, and if the checkup appointment will be in person or virtual?

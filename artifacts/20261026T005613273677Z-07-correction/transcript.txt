@@ -1,0 +1,15 @@
+Call: 20261026T005613273677Z-07-correction
+Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.
+
+[00:21] clinic: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics, part of Pretty Good AI. How may I help you today?
+[00:29] patient: Hi, this is Jordan Ellis. I'd like to schedule a routine visit for next Thursday morning. Could you help me with that?
+[00:36] clinic: Can you please provide your date of birth?
+[00:41] patient: Sure, my date of birth is April 16, 1987.
+[00:57] clinic: Just to confirm, I have your name as Jordan Ellis and your date of birth? As April sixteenth nineteen eighty seven. Is that correct? If so, please spell out your first and last name for me.
+[01:09] patient: Yes, that's correct. My name is spelled J-O-R-D-A-N E-L-L-I-S.
+[01:24] clinic: Would you like to use your phone number to look up your record? If so, please tell me the number you have on file with us. If you are not sure, let me know, and we can confirm your name and date of birth again.
+[01:38] patient: Please go ahead and use the phone number on file. If you need it, my callback number is +1 878-789-8859. This is a test call, by the way.
+[01:51] clinic: I have your phone number as eight seven eight seven eight nine eight eight five nine. And your date of birth is April sixteenth nineteen eighty seven. Is that correct?
+[01:54] patient: Yes, that's correct. Thank you.
+[02:14] clinic: I wasn't able to find your record in our system. I can connect you to our patient support team. I can also help with booking, rescheduling, or canceling appointments. Medication refills, insurance updates, and general clinic questions. Would you like to give me a try?
+[02:26] patient [interrupted]: Yes, please help me book an appointment. I want a routine visit next Thursday morning. Actually, sorry, I meant Friday morning, not Thursday. Could you check availability for Friday morning instead?

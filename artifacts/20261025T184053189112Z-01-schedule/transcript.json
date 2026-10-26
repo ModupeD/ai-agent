@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "offset": 15.252,
+    "speaker": "clinic",
+    "text": "This call may be recorded for quality and training purposes.",
+    "interrupted": false
+  },
+  {
+    "id": 2,
+    "offset": 23.739,
+    "speaker": "clinic",
+    "text": "Thank you for calling Pivot Point Orthopedics. Would you like to create a demo patient profile? I just need your first and last name to get started.",
+    "interrupted": false
+  },
+  {
+    "id": 3,
+    "offset": 30.369,
+    "speaker": "patient",
+    "text": "Hi, this is Jordan Ellis. I’m looking to schedule a routine new-patient checkup if possible.",
+    "interrupted": false
+  },
+  {
+    "id": 4,
+    "offset": 40.791,
+    "speaker": "clinic",
+    "text": "Let me finish setting up your demo patient profile, then I can help you schedule a new patient checkup. Moment while I get that ready.",
+    "interrupted": false
+  },
+  {
+    "id": 5,
+    "offset": 48.791,
+    "speaker": "clinic",
+    "text": "Your patient profile was set up. And I have your date of birth as July fourth two thousand. How can I help you today?",
+    "interrupted": false
+  },
+  {
+    "id": 6,
+    "offset": 61.101,
+    "speaker": "patient",
+    "text": "Actually, my birthday is April 16, 1987. I need to schedule a routine new patient checkup, preferably next Tuesday afternoon, but I’m flexible. Could you tell me what you have available?",
+    "interrupted": false
+  },
+  {
+    "id": 7,
+    "offset": 72.942,
+    "speaker": "clinic",
+    "text": "Let me check the schedule for new patient checkup appointment. I'll look for openings next Tuesday afternoon first, but I'll let you know the range of available time.",
+    "interrupted": false
+  },
+  {
+    "id": 8,
+    "offset": 76.136,
+    "speaker": "patient",
+    "text": "Thanks, I appreciate",
+    "interrupted": true
+  },
+  {
+    "id": 9,
+    "offset": 76.741,
+    "speaker": "clinic",
+    "text": "There are several",
+    "interrupted": false
+  },
+  {
+    "id": 10,
+    "offset": 79.514,
+    "speaker": "patient",
+    "text": "Could you please tell me the",
+    "interrupted": true
+  },
+  {
+    "id": 11,
+    "offset": 80.489,
+    "speaker": "clinic",
+    "text": "You're welcome. On",
+    "interrupted": false
+  },
+  {
+    "id": 12,
+    "offset": 89.379,
+    "speaker": "patient",
+    "text": "Could you please tell me the available time slots for next Tuesday afternoon? I want to pick a time that works best.",
+    "interrupted": false
+  },
+  {
+    "id": 13,
+    "offset": 89.695,
+    "speaker": "clinic",
+    "text": "Next",
+    "interrupted": false
+  },
+  {
+    "id": 14,
+    "offset": 93.142,
+    "speaker": "patient",
+    "text": "Sorry, I didn't catch the full response. Could you please",
+    "interrupted": true
+  },
+  {
+    "id": 15,
+    "offset": 93.383,
+    "speaker": "clinic",
+    "text": "for next",
+    "interrupted": false
+  },
+  {
+    "id": 16,
+    "offset": 96.882,
+    "speaker": "patient",
+    "text": "I'm sorry, I still didn't get",
+    "interrupted": true
+  },
+  {
+    "id": 17,
+    "offset": 96.898,
+    "speaker": "clinic",
+    "text": "no pop.",
+    "interrupted": false
+  },
+  {
+    "id": 18,
+    "offset": 105.429,
+    "speaker": "patient",
+    "text": "I’m having trouble hearing the available times for next Tuesday afternoon. Could you please list the specific time slots you have open around then?",
+    "interrupted": false
+  },
+  {
+    "id": 19,
+    "offset": 119.392,
+    "speaker": "clinic",
+    "text": "Here are the available times for next Tuesday afternoon, twelve forty five PM, one thirty PM, three forty five PM, four thirty PM, and five fifteen PM. Would you like to book one of these?",
+    "interrupted": false
+  },
+  {
+    "id": 20,
+    "offset": 126.308,
+    "speaker": "patient",
+    "text": "Great, I’ll take the one at 1:30 PM next Tuesday, please. Also, can you tell me what I should bring to the appointment?",
+    "interrupted": false
+  },
+  {
+    "id": 21,
+    "offset": 141.143,
+    "speaker": "clinic",
+    "text": "You should bring a photo ID your insurance card, a list of current medications, and any relevant medical records. If you have recent test results or referral paperwork, bring those as well.",
+    "interrupted": false
+  },
+  {
+    "id": 22,
+    "offset": 162.592,
+    "speaker": "clinic",
+    "text": "Your appointment is set for Tuesday, October twenty seventh, at one thirty PM with doctor Dugi Hauser at Pivot Point Orthopedics. Bring your government issued photo ID your insurance card, a list of any current medications, and any imaging discs you have. Would you like me to send you a text message with these details?",
+    "interrupted": false
+  },
+  {
+    "id": 23,
+    "offset": 175.241,
+    "speaker": "patient",
+    "text": "Yes, please send me a text with the appointment details. Also, can you tell me the location of the office where this appointment will be? And is this appointment booked now, or should I wait for confirmation?",
+    "interrupted": false
+  },
+  {
+    "id": 24,
+    "offset": 188.15,
+    "speaker": "clinic",
+    "text": "Your appointment is confirmed for Tuesday, October twenty seventh at one thirty PM with doctor Judy Hauser at Pivot Point Orthopedics",
+    "interrupted": false
+  },
+  {
+    "id": 25,
+    "offset": 188.207,
+    "speaker": "clinic",
+    "text": "The office is at one two",
+    "interrupted": false
+  }
+]

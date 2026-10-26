@@ -1,0 +1,19 @@
+Call: 20261026T005022844543Z-04-refill
+Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.
+
+[00:21] clinic: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?
+[00:28] patient: Hi, this is Jordan Ellis. I need to refill my lisinopril prescription. Can you help with that?
+[00:32] clinic: Please provide your date of birth.
+[00:35] patient: Sure, it's April 16, 1987.
+[00:46] clinic: To confirm, I have your name as Jordan Ellis, and your date of birth is April sixteenth nineteen eighty seven. Is that correct?
+[00:49] patient: Yes, that's correct.
+[01:06] clinic: Would you like me to look up your record using the phone number you have on file with us? If so, please tell me that number. If you are not sure, I can confirm your name and date of birth again. Which would you prefer?
+[01:14] patient: Yes, please look it up using the phone number you have. The number is +1 878-789-8859.
+[01:24] clinic: Thank you. I have your number as eight seven eight seven eight nine eight eight five nine Is that correct?
+[01:26] patient: Yes, that's correct.
+[01:31] clinic: One moment while I look up your record.
+[01:32] patient: I'll wait.
+[01:34] clinic: I'm unable to find your rec
+[01:36] patient [interrupted]: It sounds like you might be having trouble locating my record. What would be the next step for me now?
+[01:44] patient: The office couldn't find my record. I'll follow their instructions for the next step. Thank you for your help. Goodbye.
+[01:52] clinic: Take care. If you need anything else, feel free to call us. Goodbye.

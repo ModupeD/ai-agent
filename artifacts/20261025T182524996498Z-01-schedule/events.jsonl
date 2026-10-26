@@ -1,0 +1,3 @@
+{"offset": 2.358, "type": "history_item", "item_type": "agent_handoff"}
+{"offset": 2.368, "type": "state", "state_event": "agent_state_changed", "state": "listening"}
+{"offset": 3.846, "type": "call_error", "error": "SipCallError: SIP call failed: 488 32209 TLS transport is required to place a secure call (invalid_argument)", "sip_status_code": 488, "sip_status": "32209 TLS transport is required to place a secure call"}

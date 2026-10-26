@@ -1,0 +1,51 @@
+{
+  "id": "20261026T011100094186Z-07-correction",
+  "scenario": {
+    "id": "07-correction",
+    "title": "Correct a date mid-conversation",
+    "situation": "You want a routine visit next Thursday morning, but change your mind to Friday.",
+    "objective": "Clearly correct Thursday to Friday after the agent first discusses Thursday.",
+    "probes": "Say 'Sorry, I meant Friday, not Thursday.' Verify the final day and time.",
+    "expected": "Retains the corrected date, clarifies availability, no stale-day confirmation."
+  },
+  "caller_number": "+18787898859",
+  "destination": "+18054398008",
+  "started_at": 1792977060.09418,
+  "status": "complete",
+  "recording": "recording.ogg",
+  "transcript": "transcript.txt",
+  "timestamp_note": "Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.",
+  "room": "probe-20261026T011100094186Z-07-correction",
+  "pipeline": {
+    "stt": "deepgram/nova-3",
+    "llm": "openai/gpt-4.1-mini",
+    "tts": "cartesia/sonic-3",
+    "voice": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc"
+  },
+  "answered_offset": 7.304,
+  "end_reason": "patient_finished",
+  "connected_seconds": 86.077,
+  "audio": {
+    "channels": {
+      "left": "patient",
+      "right": "clinic"
+    },
+    "sample_rate": 24000,
+    "duration_seconds": 93.67020833333333,
+    "captured_seconds": {
+      "patient": 90.54,
+      "clinic": 90.54
+    },
+    "active_seconds": {
+      "patient": 17.54,
+      "clinic": 29.43
+    },
+    "errors": []
+  },
+  "outcome": "blocked",
+  "recap": "I couldn't verify my record, so I couldn't schedule the appointment. They transferred me to patient support for help.",
+  "farewell_played": true,
+  "ending_complete": true,
+  "clinic_reply_captured": true,
+  "duration_seconds": 94.752
+}

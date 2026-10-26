@@ -1,0 +1,15 @@
+Call: 20261026T010538718206Z-08-unclear
+Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.
+
+[00:21] clinic: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?
+[00:27] patient: Hi, this is Jordan Ellis. I wanted to check if I can schedule that thing with the doctor.
+[00:33] clinic: Please provide your date of birth.
+[00:37] patient: Sure, it's April 16, 1987.
+[00:47] clinic: Can you please spell your first and last name for me just to make sure I have it right?
+[00:53] patient: Yes, it's J-O-R-D-A-N E-L-L-I-S.
+[01:09] clinic: Would you like to use your phone number to look up your record? If so, please tell me the number you have on file with us. If you're not sure, just let me know.
+[01:18] patient: Yes, please use my phone number: 18787898859. This is a test call.
+[01:34] clinic: I have your phone number as one eight seven eight seven eight nine eight eight five nine. And your date of birth as April sixteenth nineteen eighty seven. Is that correct?
+[01:43] patient: Yes, that's correct. I was asking about scheduling that thing with the doctor. I mean a routine follow-up to check my blood pressure.
+[01:58] clinic: I can't perceive further right now. But I can make sure our clinic support team follows up with you. Please hold while I connect you to our patient support team. Can I string you now? Thank you.
+[02:09] patient: I wanted to schedule a routine follow-up to check my blood pressure. The agent is connecting me to patient support for further help. Thank you for your help. Goodbye.

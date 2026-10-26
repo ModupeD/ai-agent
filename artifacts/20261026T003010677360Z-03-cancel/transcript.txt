@@ -1,0 +1,17 @@
+Call: 20261026T003010677360Z-03-cancel
+Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.
+
+[00:20] clinic: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI. How may I help you today?
+[00:28] patient: Hi, this is Jordan Ellis. I think I have a checkup scheduled for next Monday and a follow-up appointment next month. Can you help me confirm my appointments?
+[00:35] clinic: Please provide your date of birth.
+[00:39] patient: Sure, my date of birth is April 16, 1987.
+[00:57] clinic: Just to confirm, I have your name as Jordan Ellis and your date of birth as April sixteenth nineteen eighty seven. Is that correct? If so, please spell your first and last name for me.
+[01:09] patient: Yes, that's correct. My first name is spelled J-O-R-D-A-N. My last name is E-L-L-I-S.
+[01:26] clinic: Would you like to use your phone number to look up your record? If so, please tell me the number you have on file with us. If you're not sure, just confirm your first and last name and date of birth for me one more time.
+[01:35] patient: Let's use the phone number, please. It's 1-878-789-8859. This is actually a test call.
+[01:51] clinic: I have your phone number as eight seven eight seven eight nine eight eight five nine. And your date of birth as April sixteenth nineteen eighty seven. Is that correct?
+[01:53] patient: Yes, that's correct.
+[02:07] clinic: I'm unable to find a matching record for you in our system. I can connect you to our patient support team for further help. Would you like to continue with me, or should I transfer you now?
+[02:17] patient: I was unable to find my records with my info and phone number. I will contact support to create my record before booking. Thank you for your help. Goodbye.
+[02:17] clinic: Transferring you now. Thank you.
+[02:19] clinic: Hello.

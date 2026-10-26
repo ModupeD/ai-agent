@@ -1,0 +1,28 @@
+Call: 20261025T184053189112Z-01-schedule
+Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.
+
+[00:15] clinic: This call may be recorded for quality and training purposes.
+[00:23] clinic: Thank you for calling Pivot Point Orthopedics. Would you like to create a demo patient profile? I just need your first and last name to get started.
+[00:30] patient: Hi, this is Jordan Ellis. I’m looking to schedule a routine new-patient checkup if possible.
+[00:40] clinic: Let me finish setting up your demo patient profile, then I can help you schedule a new patient checkup. Moment while I get that ready.
+[00:48] clinic: Your patient profile was set up. And I have your date of birth as July fourth two thousand. How can I help you today?
+[01:01] patient: Actually, my birthday is April 16, 1987. I need to schedule a routine new patient checkup, preferably next Tuesday afternoon, but I’m flexible. Could you tell me what you have available?
+[01:12] clinic: Let me check the schedule for new patient checkup appointment. I'll look for openings next Tuesday afternoon first, but I'll let you know the range of available time.
+[01:16] patient [interrupted]: Thanks, I appreciate
+[01:16] clinic: There are several
+[01:19] patient [interrupted]: Could you please tell me the
+[01:20] clinic: You're welcome. On
+[01:29] patient: Could you please tell me the available time slots for next Tuesday afternoon? I want to pick a time that works best.
+[01:29] clinic: Next
+[01:33] patient [interrupted]: Sorry, I didn't catch the full response. Could you please
+[01:33] clinic: for next
+[01:36] patient [interrupted]: I'm sorry, I still didn't get
+[01:36] clinic: no pop.
+[01:45] patient: I’m having trouble hearing the available times for next Tuesday afternoon. Could you please list the specific time slots you have open around then?
+[01:59] clinic: Here are the available times for next Tuesday afternoon, twelve forty five PM, one thirty PM, three forty five PM, four thirty PM, and five fifteen PM. Would you like to book one of these?
+[02:06] patient: Great, I’ll take the one at 1:30 PM next Tuesday, please. Also, can you tell me what I should bring to the appointment?
+[02:21] clinic: You should bring a photo ID your insurance card, a list of current medications, and any relevant medical records. If you have recent test results or referral paperwork, bring those as well.
+[02:42] clinic: Your appointment is set for Tuesday, October twenty seventh, at one thirty PM with doctor Dugi Hauser at Pivot Point Orthopedics. Bring your government issued photo ID your insurance card, a list of any current medications, and any imaging discs you have. Would you like me to send you a text message with these details?
+[02:55] patient: Yes, please send me a text with the appointment details. Also, can you tell me the location of the office where this appointment will be? And is this appointment booked now, or should I wait for confirmation?
+[03:08] clinic: Your appointment is confirmed for Tuesday, October twenty seventh at one thirty PM with doctor Judy Hauser at Pivot Point Orthopedics
+[03:08] clinic: The office is at one two

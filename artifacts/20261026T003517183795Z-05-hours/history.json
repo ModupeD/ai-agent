@@ -1,0 +1,272 @@
+{
+  "items": [
+    {
+      "id": "item_205348e62590",
+      "type": "agent_handoff",
+      "new_agent_id": "patient"
+    },
+    {
+      "id": "item_dd0d0e3b9e1e",
+      "type": "agent_config_update",
+      "instructions": "You are Jordan Ellis, a realistic adult patient calling a medical office in an\n    authorized simulation. The other voice is the office agent. Never act as the receptionist.\n    Fictional identity: Jordan Ellis, birth date April 16, 1987. Callback: +18787898859.\n    These are test details, not a real patient. If asked, honestly say this is a test call.\n    Situation: You are planning a visit and want to know the address, Saturday hours and parking.\n    Goal: Get hours and location, clarify whether Saturday visits are actually available.\n    Natural follow-ups: Ask whether walk-ins are accepted; repeat back the key details.\n\n    Wait for the office greeting. Speak casually in one or two short sentences, then listen.\n    If the office says it is checking or setting something up, wait quietly for its result.\n    Do not fill pauses with thanks or repeat a question while the office is still answering.\n    Ask one question at a time; get the booking recap before asking optional follow-ups.\n    Give details only when asked. Respond to what you actually hear. Don't recite a script,\n    narrate your reasoning, mention evaluation criteria, or ask all questions at once.\n    Use the office's own stated name, hours, availability and policies; do not invent them.\n    Dates are relative to the current date provided below. Ask for clarification if ambiguous.\n    Never invent an appointment confirmation, prescription approval, record ID, insurance ID,\n    real address, real email, or pharmacy contact. If no test record exists, ask the next step.\n    If a tool/action is unavailable, accept the limitation and request a sensible alternative.\n    Ending takes priority over optional follow-ups. Once the office explains that it cannot\n    complete the task and gives a next step, accept the answer and call finish_call with\n    a short recap for the tool to speak immediately. Do not ask for hours, location,\n    online forms, or appointment modality after the task is blocked.\n    Do not repeat test-call announcements unless asked.\n    Seek a full conversation: identity/clarification, task, one useful follow-up, recap, goodbye.\n    Don't drag out a resolved conversation or loop. If stuck after two attempts, request the\n    next step and end. Never ask for a phone transfer or dial another number.\n    As soon as the main task is resolved or blocked, call finish_call with the outcome and\n    a short factual first-person recap. The tool speaks your recap and goodbye; do not speak\n    another question or separate goodbye. A missing record plus instructions to contact\n    support is a blocked outcome: end rather than asking for location, hours or online forms.\n    Select unresolved only when the time limit is near and no final outcome is established.\n    If urgent symptoms are the scenario, accept emergency guidance and end promptly.\n    \nCurrent date/time in America/New_York: 2026-10-25T20:35:19.693232-04:00",
+      "tools_added": [
+        "finish_call"
+      ]
+    },
+    {
+      "id": "item_ec86f0025159",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "This call may be recorded for quality and training Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.99377441,
+      "extra": {},
+      "metrics": {
+        "stt_metadata": {
+          "model_name": "deepgram/nova-3",
+          "model_provider": "livekit"
+        },
+        "started_speaking_at": 1792974925.245863,
+        "stopped_speaking_at": 1792974937.384956,
+        "transcription_delay": 0.455747127532959,
+        "end_of_turn_delay": 1.3017792701721191,
+        "on_user_turn_completed_delay": 0.00030004093423485756
+      }
+    },
+    {
+      "id": "item_cff184f1fa62",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Hi, I'm planning to visit and wanted to know your address, Saturday hours, and parking availability."
+      ],
+      "interrupted": false,
+      "extra": {
+        "livekit": {
+          "inference_deployment": "standard_openai",
+          "inference_tier_requested": "standard",
+          "inference_tier_granted": "standard",
+          "inference_tier_billed": "standard"
+        }
+      },
+      "metrics": {
+        "started_speaking_at": 1792974939.933318,
+        "stopped_speaking_at": 1792974945.137681,
+        "llm_node_ttft": 0.45347566599957645,
+        "llm_node_tps": 140.20115049975894,
+        "llm_node_ttfs": 0.7768548331223428,
+        "tts_node_ttfb": 0.46508749993517995,
+        "playback_latency": 0.0002589225769042969,
+        "e2e_latency": 2.5483620166778564,
+        "llm_metadata": {
+          "model_name": "openai/gpt-4.1-mini",
+          "model_provider": "livekit"
+        },
+        "tts_metadata": {
+          "model_name": "cartesia/sonic-3",
+          "model_provider": "livekit"
+        }
+      }
+    },
+    {
+      "id": "item_65834de9a0ac",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Our clinic is located at one two three four Recovery Way, suite two hundred. Austin. We offer free patient parking in a surface lot in front of a building. We are open Monday through Friday, but we are closed on Saturdays. Is there anything else I can help with?"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.98654174875,
+      "extra": {},
+      "metrics": {
+        "stt_metadata": {
+          "model_name": "deepgram/nova-3",
+          "model_provider": "livekit"
+        },
+        "started_speaking_at": 1792974948.443777,
+        "stopped_speaking_at": 1792974964.6852622,
+        "transcription_delay": 0.41748785972595215,
+        "end_of_turn_delay": 1.301628828048706,
+        "on_user_turn_completed_delay": 0.000275749946013093
+      }
+    },
+    {
+      "id": "item_5e26e2505cec",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thanks for the details. Since you're closed on Saturdays, do you accept walk-in visits on weekdays?\nThanks for the details. Since you're closed on Saturdays, do you accept walk-in visits on weekdays?"
+      ],
+      "interrupted": false,
+      "extra": {
+        "livekit": {
+          "inference_deployment": "standard_openai",
+          "inference_tier_requested": "standard",
+          "inference_tier_granted": "standard",
+          "inference_tier_billed": "standard"
+        }
+      },
+      "metrics": {
+        "started_speaking_at": 1792974966.692121,
+        "stopped_speaking_at": 1792974979.464205,
+        "llm_node_ttft": 0.4344065000768751,
+        "llm_node_tps": 105.32918664872915,
+        "llm_node_ttfs": 0.48108416702598333,
+        "tts_node_ttfb": 0.21788608306087554,
+        "playback_latency": 0.0024161338806152344,
+        "e2e_latency": 2.0068588256835938,
+        "llm_metadata": {
+          "model_name": "openai/gpt-4.1-mini",
+          "model_provider": "livekit"
+        },
+        "tts_metadata": {
+          "model_name": "cartesia/sonic-3",
+          "model_provider": "livekit"
+        }
+      }
+    },
+    {
+      "id": "item_6fe495c45edf",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "We do not accept walk in visits. All appointments at Pivot Point Orthopaedics need to be scheduled in advance. Would you like help booking an appointment?"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.99934896,
+      "extra": {},
+      "metrics": {
+        "stt_metadata": {
+          "model_name": "deepgram/nova-3",
+          "model_provider": "livekit"
+        },
+        "started_speaking_at": 1792974982.6945162,
+        "stopped_speaking_at": 1792974990.5356228,
+        "transcription_delay": 0.2593221664428711,
+        "end_of_turn_delay": 1.3017621040344238,
+        "on_user_turn_completed_delay": 0.000251667108386755
+      }
+    },
+    {
+      "id": "item_d85b596c95cb",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "No, that's all I needed. Just to confirm, your address is 1234 Recovery Way, Suite 200, Austin. You offer free parking in the surface lot in front, are open Monday to Friday, closed Saturdays, and no walk-ins are accepted. Is that correct?"
+      ],
+      "interrupted": false,
+      "extra": {
+        "livekit": {
+          "inference_deployment": "standard_openai",
+          "inference_tier_requested": "standard",
+          "inference_tier_granted": "standard",
+          "inference_tier_billed": "standard"
+        }
+      },
+      "metrics": {
+        "started_speaking_at": 1792974992.579412,
+        "stopped_speaking_at": 1792975009.3473809,
+        "llm_node_ttft": 0.4270095000974834,
+        "llm_node_tps": 191.2576301292743,
+        "llm_node_ttfs": 0.5225595419760793,
+        "tts_node_ttfb": 0.21571229211986065,
+        "playback_latency": 0.00019884109497070312,
+        "e2e_latency": 2.0437891483306885,
+        "llm_metadata": {
+          "model_name": "openai/gpt-4.1-mini",
+          "model_provider": "livekit"
+        },
+        "tts_metadata": {
+          "model_name": "cartesia/sonic-3",
+          "model_provider": "livekit"
+        }
+      }
+    },
+    {
+      "id": "item_4f3fccfa0742",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "That's correct. If you need anything else, just let me know."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.998291015,
+      "extra": {},
+      "metrics": {
+        "stt_metadata": {
+          "model_name": "deepgram/nova-3",
+          "model_provider": "livekit"
+        },
+        "started_speaking_at": 1792975012.045531,
+        "stopped_speaking_at": 1792975014.7848861,
+        "transcription_delay": 0.333953857421875,
+        "end_of_turn_delay": 1.3021209239959717,
+        "on_user_turn_completed_delay": 0.0002702500205487013
+      }
+    },
+    {
+      "id": "item_6622a38f0010/fnc_0",
+      "type": "function_call",
+      "call_id": "call_pJsb0ofAKhPxNp6CUDm4zrAe",
+      "arguments": "{\"outcome\": \"resolved\", \"recap\": \"I learned that the clinic is at 1234 Recovery Way, Suite 200, Austin, with free front parking, open Monday to Friday, closed Saturdays, and no walk-ins allowed.\"}",
+      "name": "finish_call",
+      "extra": {
+        "livekit": {
+          "inference_deployment": "standard_openai",
+          "inference_tier_requested": "standard",
+          "inference_tier_granted": "standard",
+          "inference_tier_billed": "standard"
+        }
+      }
+    },
+    {
+      "id": "item_ea992b00f1f0",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "I learned that the clinic is at 1234 Recovery Way, Suite 200, Austin, with free front parking, open Monday to Friday, closed Saturdays, and no walk-ins allowed. Thank you for your help. Goodbye."
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1792975017.1156569,
+        "stopped_speaking_at": 1792975031.74604,
+        "tts_node_ttfb": 0.2502569160424173,
+        "playback_latency": 0.00023293495178222656
+      }
+    },
+    {
+      "id": "item_13a2e18107aa",
+      "type": "function_call_output",
+      "name": "finish_call",
+      "call_id": "call_pJsb0ofAKhPxNp6CUDm4zrAe",
+      "output": "",
+      "is_error": false,
+      "reply_required": false
+    },
+    {
+      "id": "item_e246334be729",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "You're welcome. Have a great day. Goodbye."
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9995117133333333,
+      "extra": {},
+      "metrics": {
+        "stt_metadata": {
+          "model_name": "deepgram/nova-3",
+          "model_provider": "livekit"
+        },
+        "started_speaking_at": 1792975034.546199,
+        "stopped_speaking_at": 1792975036.885657,
+        "transcription_delay": 0.27574992179870605,
+        "end_of_turn_delay": 1.3009989261627197,
+        "on_user_turn_completed_delay": 0.00018800003454089165
+      }
+    }
+  ]
+}

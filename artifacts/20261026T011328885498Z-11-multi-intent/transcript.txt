@@ -1,0 +1,18 @@
+Call: 20261026T011328885498Z-11-multi-intent
+Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.
+
+[00:21] clinic: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopedics. Part of Pretty Good AI, How may I help you today?
+[00:27] patient: Hi, this is Jordan Ellis. I'd like to schedule a routine appointment. Could you help me with that?
+[00:33] clinic: Please provide your date of birth.
+[00:38] patient: Sure, it's April 16, 1987. This is a test call.
+[00:51] clinic: Just to confirm, could you please spell your first and last name for me? And your date of birth is April sixteenth nineteen eighty seven. Correct?
+[01:00] patient: Yes, that's correct. My name is Jordan, J-O-R-D-A-N, Ellis, E-L-L-I-S.
+[01:13] clinic: Thank you. Could you please spell your last name one more time just to be sure? And is your date of birth still April sixteenth nineteen eighty seven?
+[01:19] patient: Ellis, E-L-L-I-S. And yes, my date of birth is still April 16, 1987.
+[01:36] clinic: I have your phone number as eight seven eight seven eight nine eight eight five nine and your date of birth is April sixteenth nineteen eighty seven. Is that correct?
+[01:44] patient: Almost, my callback number is +1 878-789-8859. And yes, the date of birth is correct.
+[02:05] clinic: I'm unable to find your record in our system. I can connect you to our patient support team. I can also help with booking, rescheduling, or canceling appointments. Medication refills, insurance updates, and general clinic questions. Would you like to give me a try?
+[02:15] patient: Since my record is not found, could you please tell me the next step to get a routine appointment? Also, can you explain how the refill request process works at this office?
+[02:26] patient: My patient record was not found. I was informed to contact patient support to create my record before booking an appointment or requesting refills. Thank you for your help. Goodbye.
+[02:26] clinic: Since I couldn't find your record, our patient team will need to help you set up your appointment. I'll connect you to them now. Please stay on the line. Transferring you now. Thank you.
+[02:31] clinic: Hello. You've reached the Pretty Good AI test line. Goodbye.

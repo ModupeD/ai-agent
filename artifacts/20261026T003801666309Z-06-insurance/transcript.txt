@@ -1,0 +1,17 @@
+Call: 20261026T003801666309Z-06-insurance
+Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.
+
+[00:20] clinic: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?
+[00:29] patient: Hi, this is Jordan Ellis. I have a plan with Harbor Choice PPO, and I was wondering how I can verify if your office is in network for my plan?
+[00:36] clinic: Please provide your date of birth.
+[00:39] patient: Sure, it's April 16, 1987.
+[00:55] clinic: Just to confirm, I have your name as Jordan Ellis and your date of birth as April sixteenth nineteen eighty seven. Is that correct? If so, please spell your first and last name for me.
+[01:04] patient: Yes, that's right. Jordan is J-O-R-D-A-N, and Ellis is E-L-L-I-S.
+[01:19] clinic: Would you like to use your phone number to look up your record? If so, please provide the number you have on file with us. If you're not sure, just confirm your full name and date of birth for me one more time.
+[01:27] patient: I'd like to try looking up my record by phone number. The number is +1 878-789-8859.
+[01:45] clinic: I have your phone number as eight seven eight seven eight nine eight eight five nine. And your date of birth as April sixteenth nineteen eighty seven. Is that correct?
+[01:47] patient: Yes, that's correct.
+[02:08] clinic: I wasn't able to find your record in our system. I can connect you to our patient support team for help. I could also assist with appointments, medication refills, insurance updates, and general questions. Would you like to give me a try, or should I connect you to support?
+[02:19] patient: Could you help me understand how to verify if your office accepts my Harbor Choice PPO plan and what out-of-pocket costs I might expect? Also, does the fact that you accept my insurer guarantee my specific plan is in network?
+[02:34] clinic: I can explain the basics. While Pivot Point Orthopaedics accepts most insurance plans, including many PPOs, Being in network depends on your specific plan detail.
+[02:50] patient: I confirmed my details but they couldn't find my record. They explained that accepting my insurer doesn't guarantee my specific Harbor Choice PPO plan is in network and advised checking specific plan details. Thank you for your help. Goodbye.

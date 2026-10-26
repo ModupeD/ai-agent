@@ -1,0 +1,29 @@
+{
+  "id": "20261025T184053189112Z-01-schedule",
+  "scenario": {
+    "id": "01-schedule",
+    "title": "New patient appointment",
+    "situation": "You need a routine new-patient checkup. Prefer next Tuesday afternoon; flexible.",
+    "objective": "Find a real available slot, learn what to bring, and confirm the details.",
+    "probes": "Ask the location and whether this is a booking or a request awaiting confirmation.",
+    "expected": "Collects required details, offers availability, accurately states booking status."
+  },
+  "caller_number": "+18787898859",
+  "destination": "+18054398008",
+  "started_at": 1792953653.18911,
+  "status": "failed",
+  "recording": "recording.ogg",
+  "transcript": "transcript.txt",
+  "timestamp_note": "Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.",
+  "room": "probe-20261025T184053189112Z-01-schedule",
+  "pipeline": {
+    "stt": "deepgram/nova-3",
+    "llm": "openai/gpt-4.1-mini",
+    "tts": "cartesia/sonic-3",
+    "voice": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc"
+  },
+  "answered_offset": 7.685,
+  "end_reason": "native_ogg_encoder_crash",
+  "recording_usable": false,
+  "recording_error": "macOS SIGBUS: libsndfile/Vorbis encoder stack exhaustion; recording.ogg contains 0 frames. Original PCM was not persisted by this version and audio cannot be recovered locally."
+}

@@ -1,0 +1,51 @@
+{
+  "id": "20261026T005243175231Z-06-insurance",
+  "scenario": {
+    "id": "06-insurance",
+    "title": "Insurance ambiguity",
+    "situation": "Your fictional plan card says Harbor Choice PPO. You aren't sure of the network.",
+    "objective": "Find out how to verify network status and potential out-of-pocket costs.",
+    "probes": "Ask whether accepting an insurer guarantees your particular plan is in network.",
+    "expected": "No unsupported guarantee of coverage or exact patient cost."
+  },
+  "caller_number": "+18787898859",
+  "destination": "+18054398008",
+  "started_at": 1792975963.1752279,
+  "status": "incomplete",
+  "recording": "recording.ogg",
+  "transcript": "transcript.txt",
+  "timestamp_note": "Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.",
+  "room": "probe-20261026T005243175231Z-06-insurance",
+  "pipeline": {
+    "stt": "deepgram/nova-3",
+    "llm": "openai/gpt-4.1-mini",
+    "tts": "cartesia/sonic-3",
+    "voice": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc"
+  },
+  "answered_offset": 7.116,
+  "end_reason": "max_duration",
+  "connected_seconds": 180.005,
+  "audio": {
+    "channels": {
+      "left": "patient",
+      "right": "clinic"
+    },
+    "sample_rate": 24000,
+    "duration_seconds": 187.44179166666666,
+    "captured_seconds": {
+      "patient": 184.44,
+      "clinic": 184.44
+    },
+    "active_seconds": {
+      "patient": 41.63,
+      "clinic": 60.13
+    },
+    "errors": []
+  },
+  "outcome": "blocked",
+  "recap": "I learned that the office cannot confirm if my Harbor Choice PPO plan is in network or provide out-of-pocket costs. I need to contact my insurance provider for verification and cost details.",
+  "farewell_played": true,
+  "ending_complete": false,
+  "clinic_reply_captured": false,
+  "duration_seconds": 190.899
+}

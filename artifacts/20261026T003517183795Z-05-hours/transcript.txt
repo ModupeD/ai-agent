@@ -1,0 +1,13 @@
+Call: 20261026T003517183795Z-05-hours
+Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.
+
+[00:21] clinic: This call may be recorded for quality and training Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?
+[00:27] patient: Hi, I'm planning to visit and wanted to know your address, Saturday hours, and parking availability.
+[00:48] clinic: Our clinic is located at one two three four Recovery Way, suite two hundred. Austin. We offer free patient parking in a surface lot in front of a building. We are open Monday through Friday, but we are closed on Saturdays. Is there anything else I can help with?
+[01:02] patient: Thanks for the details. Since you're closed on Saturdays, do you accept walk-in visits on weekdays?
+Thanks for the details. Since you're closed on Saturdays, do you accept walk-in visits on weekdays?
+[01:14] clinic: We do not accept walk in visits. All appointments at Pivot Point Orthopaedics need to be scheduled in advance. Would you like help booking an appointment?
+[01:32] patient: No, that's all I needed. Just to confirm, your address is 1234 Recovery Way, Suite 200, Austin. You offer free parking in the surface lot in front, are open Monday to Friday, closed Saturdays, and no walk-ins are accepted. Is that correct?
+[01:38] clinic: That's correct. If you need anything else, just let me know.
+[01:54] patient: I learned that the clinic is at 1234 Recovery Way, Suite 200, Austin, with free front parking, open Monday to Friday, closed Saturdays, and no walk-ins allowed. Thank you for your help. Goodbye.
+[02:01] clinic: You're welcome. Have a great day. Goodbye.

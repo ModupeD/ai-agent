@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "offset": 21.116,
+    "speaker": "clinic",
+    "text": "This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?",
+    "interrupted": false
+  },
+  {
+    "id": 2,
+    "offset": 28.165,
+    "speaker": "patient",
+    "text": "Hi, this is Jordan Ellis. I need to refill my lisinopril prescription. Can you help with that?",
+    "interrupted": false
+  },
+  {
+    "id": 3,
+    "offset": 32.919,
+    "speaker": "clinic",
+    "text": "Please provide your date of birth.",
+    "interrupted": false
+  },
+  {
+    "id": 4,
+    "offset": 35.674,
+    "speaker": "patient",
+    "text": "Sure, it's April 16, 1987.",
+    "interrupted": false
+  },
+  {
+    "id": 5,
+    "offset": 46.819,
+    "speaker": "clinic",
+    "text": "To confirm, I have your name as Jordan Ellis, and your date of birth is April sixteenth nineteen eighty seven. Is that correct?",
+    "interrupted": false
+  },
+  {
+    "id": 6,
+    "offset": 49.118,
+    "speaker": "patient",
+    "text": "Yes, that's correct.",
+    "interrupted": false
+  },
+  {
+    "id": 7,
+    "offset": 66.169,
+    "speaker": "clinic",
+    "text": "Would you like me to look up your record using the phone number you have on file with us? If so, please tell me that number. If you are not sure, I can confirm your name and date of birth again. Which would you prefer?",
+    "interrupted": false
+  },
+  {
+    "id": 8,
+    "offset": 74.119,
+    "speaker": "patient",
+    "text": "Yes, please look it up using the phone number you have. The number is +1 878-789-8859.",
+    "interrupted": false
+  },
+  {
+    "id": 9,
+    "offset": 84.222,
+    "speaker": "clinic",
+    "text": "Thank you. I have your number as eight seven eight seven eight nine eight eight five nine Is that correct?",
+    "interrupted": false
+  },
+  {
+    "id": 10,
+    "offset": 86.23,
+    "speaker": "patient",
+    "text": "Yes, that's correct.",
+    "interrupted": false
+  },
+  {
+    "id": 11,
+    "offset": 91.369,
+    "speaker": "clinic",
+    "text": "One moment while I look up your record.",
+    "interrupted": false
+  },
+  {
+    "id": 12,
+    "offset": 92.743,
+    "speaker": "patient",
+    "text": "I'll wait.",
+    "interrupted": false
+  },
+  {
+    "id": 13,
+    "offset": 94.619,
+    "speaker": "clinic",
+    "text": "I'm unable to find your rec",
+    "interrupted": false
+  },
+  {
+    "id": 14,
+    "offset": 96.717,
+    "speaker": "patient",
+    "text": "It sounds like you might be having trouble locating my record. What would be the next step for me now?",
+    "interrupted": true
+  },
+  {
+    "id": 15,
+    "offset": 104.608,
+    "speaker": "patient",
+    "text": "The office couldn't find my record. I'll follow their instructions for the next step. Thank you for your help. Goodbye.",
+    "interrupted": false
+  },
+  {
+    "id": 16,
+    "offset": 112.662,
+    "speaker": "clinic",
+    "text": "Take care. If you need anything else, feel free to call us. Goodbye.",
+    "interrupted": false
+  }
+]

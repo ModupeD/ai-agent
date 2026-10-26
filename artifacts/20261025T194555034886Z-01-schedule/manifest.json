@@ -1,0 +1,51 @@
+{
+  "id": "20261025T194555034886Z-01-schedule",
+  "scenario": {
+    "id": "01-schedule",
+    "title": "New patient appointment",
+    "situation": "You need a routine new-patient checkup. Prefer next Tuesday afternoon; flexible.",
+    "objective": "Find a real available slot, learn what to bring, and confirm the details.",
+    "probes": "Only if booking is possible, ask the location and booking status. If the record cannot be found, ask once whether a new/demo profile can be created. If support is required, accept that next step, recap that no appointment was booked, and end.",
+    "expected": "Collects required details, offers availability, accurately states booking status."
+  },
+  "caller_number": "+18787898859",
+  "destination": "+18054398008",
+  "started_at": 1792957555.034881,
+  "status": "complete",
+  "recording": "recording.ogg",
+  "transcript": "transcript.txt",
+  "timestamp_note": "Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.",
+  "room": "probe-20261025T194555034886Z-01-schedule",
+  "pipeline": {
+    "stt": "deepgram/nova-3",
+    "llm": "openai/gpt-4.1-mini",
+    "tts": "cartesia/sonic-3",
+    "voice": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc"
+  },
+  "answered_offset": 8.464,
+  "end_reason": "patient_finished",
+  "connected_seconds": 120.895,
+  "audio": {
+    "channels": {
+      "left": "patient",
+      "right": "clinic"
+    },
+    "sample_rate": 24000,
+    "duration_seconds": 129.62508333333332,
+    "captured_seconds": {
+      "patient": 125.9,
+      "clinic": 125.9
+    },
+    "active_seconds": {
+      "patient": 25.57,
+      "clinic": 42.07
+    },
+    "errors": []
+  },
+  "outcome": "blocked",
+  "recap": "My new-patient checkup appointment request couldn't be processed; I'll wait for clinic support to follow up.",
+  "farewell_played": true,
+  "ending_complete": true,
+  "clinic_reply_captured": true,
+  "duration_seconds": 132.712
+}

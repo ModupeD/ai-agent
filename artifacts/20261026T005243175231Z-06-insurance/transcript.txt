@@ -1,0 +1,17 @@
+Call: 20261026T005243175231Z-06-insurance
+Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.
+
+[00:20] clinic: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?
+[00:32] patient: Hi, I'm Jordan Ellis. I have Harbor Choice PPO insurance, and I'm trying to find out if your office is in network for my plan and what my out-of-pocket costs might be. Can you help with that?
+[00:39] clinic: Need to verify your information first. Please provide your date of birth.
+[00:44] patient: Sure, it's April 16, 1987.
+[01:01] clinic: Just to confirm, I have your name as Jordan Ellis and your date of birth as April sixteenth nineteen eighty seven. Is that correct? If so, please spell your first and last name for me.
+[01:13] patient: Yes, that's correct. My first name is J-O-R-D-A-N, and my last name is E-L-L-I-S.
+[01:30] clinic: Would you like me to look up your record using your phone number? If so, please provide the number you have on file with us. If you're not sure, I can confirm your name and date of birth again. Let me know how you'd like to proceed.
+[01:38] patient: Yes, please look it up with my phone number. It's 1-878-789-8859.
+[01:54] clinic: I have your phone number as one eight seven eight seven eight nine eight eight five nine, and your date of birth is April sixteenth nineteen eighty seven. Is that correct?
+[01:56] patient: Yes, that's correct.
+[02:11] clinic: I'm unable to find a matching record for you in our system. I can connect you to our patient support team for further help. Would you like to continue with me, or should I transfer you now?
+[02:24] patient: Since I'm just testing, let's keep going with you. I want to know how I can verify if you accept Harbor Choice PPO for my exact plan and if that means I'm definitely in network with you. Also, can you tell me what out-of-pocket costs I might expect?
+[02:53] clinic: I can't access specific insurance plan details or confirm exact out of pocket costs. For the most accurate answer, it's best to contact your insurance provider directly and ask if Pivot Point Orthopedics is in network for your Harbor Choice PPO plan. Your insurance company can also give you details about co pays, deductibles, and coverage. If you'd like, I can connect you to our patient support team for more help with insurance questions.
+[03:05] patient: I learned that the office cannot confirm if my Harbor Choice PPO plan is in network or provide out-of-pocket costs. I need to contact my insurance provider for verification and cost details. Thank you for your help. Goodbye.
