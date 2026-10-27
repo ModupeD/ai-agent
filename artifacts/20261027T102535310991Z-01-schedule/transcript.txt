@@ -1,0 +1,19 @@
+Call: 20261027T102535310991Z-01-schedule
+Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.
+
+[00:21] clinic: This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?
+[00:23] patient: Hey, this is Jordan Ellis.
+[00:30] clinic: Please provide your date of birth.
+[00:33] patient: April 16, 1987.
+[00:45] clinic: Just to confirm, can you please spell your first and last name for me?
+[00:51] patient: J-o-r-d-a-n E-l-l-i-s.
+[01:10] clinic: You like me to look up your record using your phone number? If so, please provide the number you have on file with us. If you're not sure, let me know, and we can confirm your name and date of birth again.
+[01:19] patient: Yes, please look it up with my number. It’s 18787898859.
+[01:39] clinic: I have your phone number as eight seven eight seven eight nine eight eight five nine, and your date of birth as April sixteenth nineteen eighty seven. Is that correct?
+[01:44] patient: Yes, that's correct.
+[02:08] clinic: I can't proceed further right now, but I can make sure our clinic support team follows up with you. Would you like me to connect you to our patient support team? I can also help with booking, rescheduling, or canceling appointments. Medication refills, insurance updates, and general clinic questions. Would you like to give me a try?
+[02:16] patient: Actually, I need to book a routine new-patient checkup, preferably next Tuesday afternoon, but I can be flexible. Can you help with that?
+[02:29] clinic: I can help with booking a new patient checkup, but I wasn't able to find your record in our system. You like me to connect you to our patient support team so they can assist you directly?
+[02:37] patient: Yes, please connect me to the patient support team so they can assist with creating a new profile and booking my appointment. No appointment booked yet.
+[02:40] patient: Okay, thanks for your help. Goodbye.
+[02:46] clinic: Transferring you now. Thank you.

@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "offset": 21.049,
+    "speaker": "clinic",
+    "text": "This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?",
+    "interrupted": false
+  },
+  {
+    "id": 2,
+    "offset": 23.947,
+    "speaker": "patient",
+    "text": "Hey, this is Jordan Ellis.",
+    "interrupted": false
+  },
+  {
+    "id": 3,
+    "offset": 30.701,
+    "speaker": "clinic",
+    "text": "Please provide your date of birth.",
+    "interrupted": false
+  },
+  {
+    "id": 4,
+    "offset": 33.99,
+    "speaker": "patient",
+    "text": "April 16, 1987.",
+    "interrupted": false
+  },
+  {
+    "id": 5,
+    "offset": 45.601,
+    "speaker": "clinic",
+    "text": "Just to confirm, can you please spell your first and last name for me?",
+    "interrupted": false
+  },
+  {
+    "id": 6,
+    "offset": 51.542,
+    "speaker": "patient",
+    "text": "J-o-r-d-a-n E-l-l-i-s.",
+    "interrupted": false
+  },
+  {
+    "id": 7,
+    "offset": 70.601,
+    "speaker": "clinic",
+    "text": "You like me to look up your record using your phone number? If so, please provide the number you have on file with us. If you're not sure, let me know, and we can confirm your name and date of birth again.",
+    "interrupted": false
+  },
+  {
+    "id": 8,
+    "offset": 79.667,
+    "speaker": "patient",
+    "text": "Yes, please look it up with my number. It’s 18787898859.",
+    "interrupted": false
+  },
+  {
+    "id": 9,
+    "offset": 99.859,
+    "speaker": "clinic",
+    "text": "I have your phone number as eight seven eight seven eight nine eight eight five nine, and your date of birth as April sixteenth nineteen eighty seven. Is that correct?",
+    "interrupted": false
+  },
+  {
+    "id": 10,
+    "offset": 104.62,
+    "speaker": "patient",
+    "text": "Yes, that's correct.",
+    "interrupted": false
+  },
+  {
+    "id": 11,
+    "offset": 128.302,
+    "speaker": "clinic",
+    "text": "I can't proceed further right now, but I can make sure our clinic support team follows up with you. Would you like me to connect you to our patient support team? I can also help with booking, rescheduling, or canceling appointments. Medication refills, insurance updates, and general clinic questions. Would you like to give me a try?",
+    "interrupted": false
+  },
+  {
+    "id": 12,
+    "offset": 136.175,
+    "speaker": "patient",
+    "text": "Actually, I need to book a routine new-patient checkup, preferably next Tuesday afternoon, but I can be flexible. Can you help with that?",
+    "interrupted": false
+  },
+  {
+    "id": 13,
+    "offset": 149.905,
+    "speaker": "clinic",
+    "text": "I can help with booking a new patient checkup, but I wasn't able to find your record in our system. You like me to connect you to our patient support team so they can assist you directly?",
+    "interrupted": false
+  },
+  {
+    "id": 14,
+    "offset": 157.056,
+    "speaker": "patient",
+    "text": "Yes, please connect me to the patient support team so they can assist with creating a new profile and booking my appointment. No appointment booked yet.",
+    "interrupted": false
+  },
+  {
+    "id": 15,
+    "offset": 160.007,
+    "speaker": "patient",
+    "text": "Okay, thanks for your help. Goodbye.",
+    "interrupted": false
+  },
+  {
+    "id": 16,
+    "offset": 166.142,
+    "speaker": "clinic",
+    "text": "Transferring you now. Thank you.",
+    "interrupted": false
+  }
+]

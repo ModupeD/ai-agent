@@ -1,0 +1,52 @@
+{
+  "id": "20261027T102535310991Z-01-schedule",
+  "scenario": {
+    "id": "01-schedule",
+    "title": "New patient appointment",
+    "situation": "You need a routine new-patient checkup. Prefer next Tuesday afternoon; flexible.",
+    "objective": "Find a real available slot, learn what to bring, and confirm the details.",
+    "probes": "Only if booking is possible, ask the location and booking status. If the record cannot be found, ask once whether a new/demo profile can be created. If support is required, accept that next step, recap that no appointment was booked, and end.",
+    "expected": "Collects required details, offers availability, accurately states booking status."
+  },
+  "caller_number": "+18787898859",
+  "destination": "+18054398008",
+  "started_at": 1793096735.310988,
+  "status": "complete",
+  "recording": "recording.ogg",
+  "transcript": "transcript.txt",
+  "timestamp_note": "Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.",
+  "room": "probe-20261027T102535310991Z-01-schedule",
+  "pipeline": {
+    "stt": "deepgram/nova-3",
+    "llm": "openai/gpt-4.1-mini",
+    "tts": "cartesia/sonic-3",
+    "voice": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc"
+  },
+  "answered_offset": 7.557,
+  "end_reason": "patient_finished",
+  "connected_seconds": 158.99,
+  "audio": {
+    "channels": {
+      "left": "patient",
+      "right": "clinic"
+    },
+    "sample_rate": 24000,
+    "duration_seconds": 166.82966666666667,
+    "captured_seconds": {
+      "patient": 163.38,
+      "clinic": 163.38
+    },
+    "active_seconds": {
+      "patient": 24.64,
+      "clinic": 54.98
+    },
+    "errors": []
+  },
+  "outcome": "blocked",
+  "recap": "No appointment booked due to missing record; patient requested connection to patient support for profile creation and booking.",
+  "farewell_played": true,
+  "farewell_interrupted": false,
+  "ending_complete": true,
+  "clinic_reply_captured": true,
+  "duration_seconds": 168.113
+}

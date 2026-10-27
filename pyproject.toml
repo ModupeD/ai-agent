@@ -2,6 +2,7 @@
 name = "call-agent"
 version = "0.1.0"
 description = "A pipeline voice caller for evidence-based telephone agent testing"
+readme = "README.md"
 requires-python = ">=3.10,<3.14"
 dependencies = [
   "livekit-agents[silero]>=1.8.6,<1.9",
@@ -15,6 +16,7 @@ dependencies = [
 
 [project.scripts]
 call-agent = "patient_probe.cli:app"
+patient-probe = "patient_probe.cli:app"
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<10", "pytest-asyncio>=1,<2", "ruff>=0.12,<1"]
@@ -22,6 +24,9 @@ dev = ["pytest>=8,<10", "pytest-asyncio>=1,<2", "ruff>=0.12,<1"]
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/patient_probe"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
