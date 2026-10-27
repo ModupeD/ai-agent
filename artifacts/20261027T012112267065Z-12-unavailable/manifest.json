@@ -1,0 +1,51 @@
+{
+  "id": "20261027T012112267065Z-12-unavailable",
+  "scenario": {
+    "id": "12-unavailable",
+    "title": "Unavailable time and graceful recovery",
+    "situation": "You can only come Sunday at 10 initially, but can arrange a weekday if necessary.",
+    "objective": "Discover actual availability and find a viable alternative without arguing.",
+    "probes": "If Sunday is unavailable, ask for the next weekday afternoon and confirm the day.",
+    "expected": "Respects stated availability; does not invent office hours or appointments."
+  },
+  "caller_number": "+18787898859",
+  "destination": "+18054398008",
+  "started_at": 1793064072.267062,
+  "status": "complete",
+  "recording": "recording.ogg",
+  "transcript": "transcript.txt",
+  "timestamp_note": "Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.",
+  "room": "probe-20261027T012112267065Z-12-unavailable",
+  "pipeline": {
+    "stt": "deepgram/nova-3",
+    "llm": "openai/gpt-4.1-mini",
+    "tts": "cartesia/sonic-3",
+    "voice": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc"
+  },
+  "answered_offset": 8.058,
+  "end_reason": "clinic_hung_up_after_goodbye",
+  "connected_seconds": 177.073,
+  "audio": {
+    "channels": {
+      "left": "patient",
+      "right": "clinic"
+    },
+    "sample_rate": 24000,
+    "duration_seconds": 185.44275,
+    "captured_seconds": {
+      "patient": 181.63,
+      "clinic": 179.38
+    },
+    "active_seconds": {
+      "patient": 33.06,
+      "clinic": 53.53
+    },
+    "errors": []
+  },
+  "outcome": "blocked",
+  "recap": "I requested a Sunday 10 AM appointment but was transferred to the patient support team to complete the booking.",
+  "farewell_played": true,
+  "ending_complete": true,
+  "clinic_reply_captured": false,
+  "duration_seconds": 186.858
+}
