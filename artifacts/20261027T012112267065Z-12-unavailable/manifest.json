@@ -47,5 +47,11 @@
   "farewell_played": true,
   "ending_complete": true,
   "clinic_reply_captured": false,
-  "duration_seconds": 186.858
+  "duration_seconds": 186.858,
+  "quality_review": {
+    "status": "needs_review",
+    "reason": "User reports repeated words/unnatural wording; interrupted full recap was replayed.",
+    "reviewer": "assistant",
+    "evidence_source": "User listening feedback and transcript ending at 02:46 and 02:56"
+  }
 }

@@ -116,7 +116,8 @@ def test_speech_to_speech_configuration_is_rejected(configured_env, monkeypatch)
         Settings.load()
 
 
-def test_human_rejection_excludes_an_otherwise_complete_call(tmp_path):
+@pytest.mark.parametrize("review_status", ["rejected", "needs_review"])
+def test_human_rejection_excludes_an_otherwise_complete_call(tmp_path, review_status):
     call = CallArtifacts(tmp_path, {"id": "overlap"}, "+12125550123")
     for _ in range(3):
         call.turn("patient", "Thanks for your help.")
@@ -130,7 +131,7 @@ def test_human_rejection_excludes_an_otherwise_complete_call(tmp_path):
         call.path / "recording.ogg", np.zeros((61 * 8000, 2)), 8000, format="OGG", subtype="VORBIS"
     )
     assert audit(tmp_path)["passing_calls"] == 1
-    call.save(quality_review={"status": "rejected", "reason": "Caller talks over clinic"})
+    call.save(quality_review={"status": review_status, "reason": "Caller talks over clinic"})
     result = audit(tmp_path)
     assert result["passing_calls"] == 0
     assert any("listening review" in p for p in result["calls"][0]["problems"])

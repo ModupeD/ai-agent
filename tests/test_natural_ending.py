@@ -40,9 +40,7 @@ async def test_end_waits_for_spoken_recap_and_clinic_reply_before_hangup(monkeyp
     release_audio.set()
     assert await ending is None  # no generated follow-up after goodbye
     assert patient.farewell_played and not patient.done.is_set()
-    assert session.say.call_args.args[0] == (
-        "I understand the next step. Thank you for your help. Goodbye."
-    )
+    assert session.say.call_args.args[0] == ("Okay, thanks for your help. Goodbye.")
     assert session.say.call_args.kwargs["allow_interruptions"] is True
     listening = asyncio.create_task(patient.wait_for_clinic_reply())
     await asyncio.sleep(0)
@@ -86,18 +84,20 @@ async def test_clinic_speech_is_not_cut_off_at_the_quiet_grace_deadline(monkeypa
     assert patient.finish_completed
 
 
-async def test_interrupted_goodbye_resumes_listening_without_claiming_a_complete_ending():
+async def test_interrupted_goodbye_is_not_replayed_or_claimed_complete(monkeypatch):
+    monkeypatch.setattr(caller, "AUDIO_DRAIN_SECONDS", 0)
     patient, session = patient_with_session()
     session.say.return_value = SimpleNamespace(wait_for_playout=AsyncMock(), interrupted=True)
-    await patient.finish_call(
-        SimpleNamespace(wait_for_playout=AsyncMock()),
-        "resolved",
-        "The office confirmed my appointment.",
-    )
-    assert not patient.closing
-    assert patient.outcome is None and patient.recap is None
+    context = SimpleNamespace(wait_for_playout=AsyncMock())
+    await patient.finish_call(context, "blocked", "The office could not proceed.")
+    assert patient.closing and patient.farewell_interrupted
     assert not patient.farewell_played and not patient.finish_completed
     assert not patient.done.is_set()
+    await patient.finish_call(context, "blocked", "The office could not proceed.")
+    session.say.assert_called_once()
+    patient.note_clinic_turn()
+    await patient.wait_for_clinic_reply()
+    assert patient.done.is_set() and not patient.finish_completed
 
 
 async def test_recap_must_be_a_short_statement():
@@ -186,3 +186,31 @@ async def test_cancelled_quiet_wait_releases_closing_state_for_new_clinic_turn()
     assert not patient.closing and not patient.farewell_played
     assert patient.outcome is None
     session.say.assert_not_called()
+
+
+async def test_cancelled_spoken_goodbye_stays_closing_instead_of_replaying(monkeypatch):
+    monkeypatch.setattr(caller, "AUDIO_DRAIN_SECONDS", 0)
+    patient, session = patient_with_session()
+    never_finishes = asyncio.Event()
+    session.say.return_value = SimpleNamespace(
+        wait_for_playout=never_finishes.wait,
+        interrupted=False,
+    )
+    context = SimpleNamespace(wait_for_playout=AsyncMock())
+    task = asyncio.create_task(
+        patient.finish_call(context, "blocked", "The office could not proceed.")
+    )
+    for _ in range(5):
+        await asyncio.sleep(0)
+        if session.say.called:
+            break
+    assert session.say.called
+    task.cancel()
+    with pytest.raises(asyncio.CancelledError):
+        await task
+    assert patient.closing and patient.farewell_interrupted
+    await patient.finish_call(context, "blocked", "The office could not proceed.")
+    session.say.assert_called_once()
+    patient.note_clinic_turn()
+    await patient.wait_for_clinic_reply()
+    assert patient.done.is_set() and not patient.finish_completed

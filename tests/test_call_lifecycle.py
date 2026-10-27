@@ -21,6 +21,7 @@ def harness(monkeypatch, tmp_path):
     )
     service = SimpleNamespace(
         outcome="blocked",
+        speech_interrupted=False,
         sip=SimpleNamespace(
             list_sip_outbound_trunk=AsyncMock(
                 return_value=SimpleNamespace(
@@ -93,7 +94,7 @@ def harness(monkeypatch, tmp_path):
             session.say = Mock(
                 return_value=SimpleNamespace(
                     wait_for_playout=played,
-                    interrupted=False,
+                    interrupted=service.speech_interrupted,
                 )
             )
             await agent.finish_call(
@@ -296,4 +297,15 @@ async def test_hard_deadline_cannot_be_reclassified_by_cleanup_disconnect(harnes
     assert result["status"] == "incomplete"
     assert result["end_reason"] == "max_duration"
     assert result["farewell_played"] and not result["ending_complete"]
+    recorder.close.assert_awaited_once()
+
+
+async def test_interrupted_closing_saves_incomplete_without_repeating_goodbye(harness):
+    settings, service, session, recorder = harness
+    service.speech_interrupted = True
+    result = await caller.run_call(settings, SCENARIOS[0])
+    assert result["status"] == "incomplete"
+    assert result["end_reason"] == "closing_interrupted"
+    assert result["farewell_interrupted"] and not result["ending_complete"]
+    session.say.assert_called_once()
     recorder.close.assert_awaited_once()

@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "offset": 21.823,
+    "speaker": "clinic",
+    "text": "This call may be recorded for quality and training purposes. Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI. How may I help you today?",
+    "interrupted": false
+  },
+  {
+    "id": 2,
+    "offset": 28.764,
+    "speaker": "patient",
+    "text": "Hey, I'm Jordan Ellis. Can you tell me if you have any appointment slots this Sunday at 10?",
+    "interrupted": false
+  },
+  {
+    "id": 3,
+    "offset": 36.528,
+    "speaker": "clinic",
+    "text": "Can you please provide your date of birth? I'll check the schedule once I have that information.",
+    "interrupted": false
+  },
+  {
+    "id": 4,
+    "offset": 39.789,
+    "speaker": "patient",
+    "text": "Sure, April 16, 1987.",
+    "interrupted": false
+  },
+  {
+    "id": 5,
+    "offset": 54.029,
+    "speaker": "clinic",
+    "text": "Just to confirm, I have your name as Jordan Ellis. And your date of birth as April sixteenth nineteen eighty seven. Is that correct?",
+    "interrupted": false
+  },
+  {
+    "id": 6,
+    "offset": 56.387,
+    "speaker": "patient",
+    "text": "Yes, that's correct.",
+    "interrupted": false
+  },
+  {
+    "id": 7,
+    "offset": 69.981,
+    "speaker": "clinic",
+    "text": "Would you like me to look up your record using your phone number? If so, please tell me the number you have on file with us. If you're not sure, just let me know.",
+    "interrupted": false
+  },
+  {
+    "id": 8,
+    "offset": 83.27,
+    "speaker": "patient",
+    "text": "I’m not sure if you have it, but you can try +18787898859. This is a test call.\nIs Sunday at 10 actually available, or should I try for a weekday afternoon instead?",
+    "interrupted": false
+  },
+  {
+    "id": 9,
+    "offset": 102.18,
+    "speaker": "clinic",
+    "text": "I have your phone number as eight seven eight seven eight nine eight eight five nine and your date of birth is April sixteenth nineteen eighty seven. Is that correct? Once you confirm, I'll check the schedule for Sunday at ten and let you know about weekday afternoons too.",
+    "interrupted": false
+  },
+  {
+    "id": 10,
+    "offset": 108.217,
+    "speaker": "patient",
+    "text": "Yes, that’s correct. Please check Sunday at 10 and also the weekday afternoons.",
+    "interrupted": false
+  },
+  {
+    "id": 11,
+    "offset": 120.179,
+    "speaker": "clinic",
+    "text": "I can't find a matching record for you in our system. I'll connect you to our patient support team so they can help you with scheduling. Please stay on the line. Transferring you now. Thank you.",
+    "interrupted": false
+  },
+  {
+    "id": 12,
+    "offset": 128.349,
+    "speaker": "patient",
+    "text": "Okay, thanks for your help. Goodbye.",
+    "interrupted": false
+  },
+  {
+    "id": 13,
+    "offset": 128.358,
+    "speaker": "clinic",
+    "text": "Hello. You've reached the Pretty Good AI test line. Goodbye.",
+    "interrupted": false
+  }
+]

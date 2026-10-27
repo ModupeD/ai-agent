@@ -63,6 +63,8 @@ class Patient(Agent):
         self.outcome: str | None = None
         self.recap: str | None = None
         self.farewell_played = False
+        self.farewell_interrupted = False
+        self.closing_speech_started = False
         self.finish_completed = False
         self.clinic_speaking = False
         self.clinic_activity_at = 0.0
@@ -108,7 +110,7 @@ class Patient(Agent):
         # Called only after the clinic's actual transcript has been persisted.
         self.clinic_activity_at = time.monotonic()
         self.clinic_state_changed.set()
-        if self.farewell_played:
+        if self.farewell_played or self.farewell_interrupted:
             self.clinic_reply_recorded.set()
 
     async def wait_for_clinic_quiet(self) -> None:
@@ -139,11 +141,10 @@ class Patient(Agent):
 
         outcome: resolved = goal achieved; blocked = cannot proceed, next step provided;
             unresolved = time is short but no final result/next step is established.
-        recap: One short first-person statement (under 240 characters) to speak to the
-            office. Mention only established facts. No questions, greeting or goodbye.
-            Example blocked recap: "I'll contact support to create my record before booking."
-        The tool speaks the recap and goodbye. Do not speak a separate recap first,
-        ask optional questions after a blocked result, or generate speech after this tool.
+        recap: A short factual outcome summary for the saved report, under 240 characters.
+            This summary is not spoken. Do not invent next steps or a successful booking.
+        The tool speaks a short natural thank-you and goodbye. Do not narrate a report,
+        repeat the conversation, ask optional questions, or say a separate goodbye first.
         """
         recap = recap.strip()
         if not recap or len(recap) > 240 or "?" in recap:
@@ -156,20 +157,23 @@ class Patient(Agent):
             self.outcome, self.recap = outcome, recap
             try:
                 await self.wait_for_clinic_quiet()
+                self.closing_speech_started = True
                 handle = self.session.say(
-                    f"{recap} Thank you for your help. Goodbye.",
+                    "Okay, thanks for your help. Goodbye.",
                     allow_interruptions=True,
                 )
                 await handle.wait_for_playout()
             except asyncio.CancelledError:
-                # Clinic barge-in can cancel the pending tool. Continue listening
-                # and let the next clinic turn be handled normally.
-                self.closing = False
-                self.outcome, self.recap = None, None
+                if self.closing_speech_started:
+                    # Do not replay a partially spoken goodbye. Keep listening
+                    # and preserve the attempt as incomplete for review.
+                    self.farewell_interrupted = True
+                else:
+                    self.closing = False
+                    self.outcome, self.recap = None, None
                 raise
             if handle.interrupted:
-                self.closing = False
-                self.outcome, self.recap = None, None
+                self.farewell_interrupted = True
                 return
             self.farewell_played = True
         # Returning None suppresses an automatic LLM follow-up. The call loop
@@ -193,7 +197,7 @@ class Patient(Agent):
             await asyncio.sleep(AUDIO_DRAIN_SECONDS)
             if not self.clinic_speaking:
                 break
-        self.finish_completed = True
+        self.finish_completed = self.farewell_played and not self.farewell_interrupted
         self.done.set()
 
 
@@ -296,7 +300,7 @@ async def _run_call(settings: Settings, scenario: Scenario) -> dict:
         nudges = 0
         while not done.is_set():
             if patient is not None and patient.closing:
-                if patient.farewell_played:
+                if patient.farewell_played or patient.farewell_interrupted:
                     await patient.wait_for_clinic_reply()
                     return
                 try:
@@ -393,7 +397,13 @@ async def _run_call(settings: Settings, scenario: Scenario) -> dict:
             await asyncio.wait_for(conversation(), timeout=settings.max_call_seconds)
             if close_reason == "unknown":
                 close_reason = (
-                    "patient_finished" if patient.finish_completed else "remote_disconnect"
+                    "patient_finished"
+                    if patient.finish_completed
+                    else (
+                        "closing_interrupted"
+                        if patient.farewell_interrupted
+                        else "remote_disconnect"
+                    )
                 )
         except asyncio.TimeoutError:
             close_reason = "max_duration"
@@ -465,6 +475,7 @@ async def _run_call(settings: Settings, scenario: Scenario) -> dict:
             outcome=outcome,
             recap=patient.recap if patient else None,
             farewell_played=bool(patient and patient.farewell_played),
+            farewell_interrupted=bool(patient and patient.farewell_interrupted),
             ending_complete=ending_complete,
             clinic_reply_captured=bool(patient and patient.clinic_reply_recorded.is_set()),
             connected_seconds=round(ended - connected_at, 3) if connected_at else 0,

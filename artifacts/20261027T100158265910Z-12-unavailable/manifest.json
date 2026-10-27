@@ -1,0 +1,52 @@
+{
+  "id": "20261027T100158265910Z-12-unavailable",
+  "scenario": {
+    "id": "12-unavailable",
+    "title": "Unavailable time and graceful recovery",
+    "situation": "You can only come Sunday at 10 initially, but can arrange a weekday if necessary.",
+    "objective": "Discover actual availability and find a viable alternative without arguing.",
+    "probes": "If Sunday is unavailable, ask for the next weekday afternoon and confirm the day.",
+    "expected": "Respects stated availability; does not invent office hours or appointments."
+  },
+  "caller_number": "+18787898859",
+  "destination": "+18054398008",
+  "started_at": 1793095318.2659059,
+  "status": "complete",
+  "recording": "recording.ogg",
+  "transcript": "transcript.txt",
+  "timestamp_note": "Offsets from capture start; transcript times are turn commits, not word-aligned speech times. Audio timing uses frame arrival.",
+  "room": "probe-20261027T100158265910Z-12-unavailable",
+  "pipeline": {
+    "stt": "deepgram/nova-3",
+    "llm": "openai/gpt-4.1-mini",
+    "tts": "cartesia/sonic-3",
+    "voice": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc"
+  },
+  "answered_offset": 8.217,
+  "end_reason": "patient_finished",
+  "connected_seconds": 120.593,
+  "audio": {
+    "channels": {
+      "left": "patient",
+      "right": "clinic"
+    },
+    "sample_rate": 24000,
+    "duration_seconds": 129.04683333333332,
+    "captured_seconds": {
+      "patient": 125.03,
+      "clinic": 125.03
+    },
+    "active_seconds": {
+      "patient": 19.82,
+      "clinic": 45.04
+    },
+    "errors": []
+  },
+  "outcome": "blocked",
+  "recap": "No matching record found for Jordan Ellis, DOB 04/16/1987; referred to patient support team for scheduling assistance.",
+  "farewell_played": true,
+  "farewell_interrupted": false,
+  "ending_complete": true,
+  "clinic_reply_captured": true,
+  "duration_seconds": 130.381
+}
